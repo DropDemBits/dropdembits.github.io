@@ -18,7 +18,6 @@ nav li {
   float: left;
   background-color: #bbb;
   transition: 0.3s;
-  background-position-y: 0;
 }
 
 nav li.right {
@@ -29,15 +28,15 @@ nav li.right {
   text-decoration: none;
 }
 
+nav li.left {
+  background-image: linear-gradient(#bbb, #eee);
+  background-size: auto 200%;
+  background-position: 0 -100%;
+  transition: background-position 0.5s;
+}
+
 nav li.left:hover {
-  transition: 0.3s;
-  background-position-y: 0px;
-  background-color: #bbb;
-  transition: 0.3s;
-  background-repeat: no-repeat;
-  background-position-y: -1px;
-  background: linear-gradient(#bbb, #bbb, #CCC);
-  background-position-y: -50px;
+  background-position: 0 0;
 }
 
 nav a {
