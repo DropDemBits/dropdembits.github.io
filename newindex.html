@@ -1,24 +1,50 @@
+<!DOCTYPE html>
 <html>
 	<head>
-		<meta charset="UTF-8">
+		<meta charset="UTF-8" name="viewport" content="width=device-width, initial-scale=1">
 		<link rel="stylesheet" href="header.css">
 		<link rel="stylesheet" href="main.css">
+		<link rel="stylesheet" href="blueberry.css">
+                <title>Some Random Person's Website</title>
 	</head>
 	<style>
 	</style>
+	<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.1/jquery.min.js"></script>
+	<script src="./assets/scripts/jquery.blueberry.js"></script>
+	
+	<script>
+	$(window).on("load", function() {
+		$('.blueberry').blueberry();
+	});
+
+	function iconClick() {
+		var navBar = document.getElementById("mainNav");
+		if(navBar.className === "") {
+			navBar.className += "responsive";
+		}else {
+			navBar.className = ""
+		}
+	}
+	</script>
 	<body>
 		<div style="text-align: center; background-color: #DEDEDE;">SOON !!!</div>
-		<nav>
+		<nav id="mainNav" class="">
 			<ul>
-				<li :hover class="left"><a href="#">Home</a></li>
-				<li class="left"><a href="#">Downloads</a></li>
-				<li class="left"><a href="#">About</a></li>
-				<li class="right">IT'S MINE!!!</li>
+				<li id="main-text" class="left">IT'S MINE!!!</li>
+				<li :hover class="left special-hover"><a href="#">Home</a></li>
+				<li class="left special-hover"><a href="#">Downloads</a></li>
+				<li class="left special-hover"><a href="#">About</a></li>
+				<li class="icon"><a href="javascript:void(0)" onclick="iconClick()" style="">☰</a></li>
 			</ul>
 		</nav>
 		<div id="content">
 			<div>
 			Main
+		<div class="blueberry">
+			<ul class="slides crop" style="max-height: 240px;">
+				<li><img src="./assets/images/smile.png">Hello World!!!</li>
+				<li><img src="./assets/images/smile.png">Up and running!</li>
+			</ul>
 		</div>
 			<p>NOOT</p>
 			<p>NOOT</p>
@@ -46,9 +72,13 @@
 			<p>NOOT</p>
 			<p>NOOT</p>
 			<p>NOOT</p>
+		</div>
 		</div>
 		<footer>
 			Woot
+                        <ul>
+                            <li></li>
+                        </ul>
 		</footer>
 	</body>
 </html>

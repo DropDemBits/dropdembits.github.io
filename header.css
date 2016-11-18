@@ -4,6 +4,7 @@
 }
 
 nav ul {
+  z-index: 1000;
   list-style-type: none;
   width: 100%;
   overflow: hidden;
@@ -35,7 +36,16 @@ nav li.left {
   transition: background-position 0.5s;
 }
 
-nav li.left:hover {
+#main-text {
+  float: left;
+  display: inline-block;
+  color: white;
+  padding: 16px;
+  text-decoration: none;
+  border-right-style: solid;
+}
+
+nav li.left.special-hover:hover {
   background-position: 0 0;
 }
 
@@ -44,4 +54,48 @@ nav a {
     color: white;
     padding: 16px;
     text-decoration: none;
+}
+
+nav .icon {
+  display: none;
+}
+
+@media screen and (max-width: 768px) {
+  nav .icon {
+    float: right;
+    display: inline-block;
+    position: absolute;
+    top: 0;
+    right: 0;
+  }
+
+  nav.responsive li.icon {
+    position: absolute;
+    top: 0;
+    right: 0;
+  }
+
+  nav li:not(.icon) {
+    display: none;
+  }
+  
+  #main-text {
+    float: none;
+    display: block;
+    color: white;
+    padding: 16px;
+    text-decoration: none;
+    border-right-style: none;
+  }
+
+  nav.responsive li {
+    float: none;
+    display: block;
+  }
+
+  nav.responsive li a {
+    display: block;
+    text-align: left;
+  }
+  
 }
