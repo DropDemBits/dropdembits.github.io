@@ -11,11 +11,11 @@
 	<style>
 	</style>
 	<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.1/jquery.min.js"></script>
-	<script src="./assets/scripts/jquery.blueberry.js"></script>
-	
+	<script src="http://www.w3schools.com/lib/w3data.js"></script>
+
 	<script>
 	$(window).on("load", function() {
-		$('.blueberry').blueberry();
+		w3IncludeHTML();
 	});
 
 	function iconClick() {
@@ -28,36 +28,39 @@
 	}
 	</script>
 	<body>
-		<nav id="mainNav" class="">
-			<ul>
-				<li id="main-text" class="left">IT'S MINE!!!</li>
-				<li :hover class="left special-hover"><a href="index.html">Home</a></li>
-				<li class="left special-hover"><a href="#">Stuff</a></li>
-				<li class="left special-hover"><a href="about.html">About</a></li>
-				<li class="icon"><a href="javascript:void(0)" onclick="iconClick()" style="">☰</a></li>
-			</ul>
-		</nav>
+		<div w3-include-html="./assets/html/navbar.html"></div>
 		<div id="content">
 		<div>
 		<div class="text">
 			<h1>Stuff</h1>
 			<p>Here are the links to all the stuff I do/made
-				<ul>
-					<li><a href="https://github.com/xDIAMONDSx/ELEOS/releases">ELEOS</a></li>
-					<li><a href="https://github.com/xDIAMONDSx/CondorFOS">CondorFOS</a></li>
-					<li><a href="https://www.youtube.com/watch?v=gvdf5n-zI14"><i>Coming SOON&trade;</i></a></li>
-					<li><a href="https://www.youtube.com/watch?v=2HQaBWziYvY"><i>Coming SOON&trade;</i></a></li>
-					<li><a href="https://www.youtube.com/watch?v=wZZ7oFKsKzY"><i>Coming SOON&trade;</i></a></li>
-				</ul>
+				<div id="links">
+					<section id="eleos">
+						<h1>ELEOS</h1>
+						<img src="./assets/images/eleos.png" alt="The gameplay" style="width: 700px;">
+						<p>A game I've made</p>
+						<a href="https://github.com/xDIAMONDSx/ELEOS/releases">Link</a>
+					</section>
+					<section id="condorfos">
+						<h1>CondorFOS</h1>
+						<img src="https://raw.githubusercontent.com/xDIAMONDSx/CondorFOS/master/images/condor_0.1.png" alt="Kernel example" style="width: 700px;">
+						<p>A Hobbyist kernel</p>
+						<a href="https://github.com/xDIAMONDSx/CondorFOS">Link</a>
+					</section>
+					<br>
+					<br>
+					<ul>
+						<li><a href="https://www.youtube.com/watch?v=gvdf5n-zI14"><i>Coming SOON&trade;</i></a></li>
+						<li><a href="https://www.youtube.com/watch?v=2HQaBWziYvY"><i>Coming SOON&trade;</i></a></li>
+						<li><a href="https://www.youtube.com/watch?v=wZZ7oFKsKzY"><i>Coming SOON&trade;</i></a></li>
+					</li>
+				</div>
 			</p>
 		</div>
 		</div>
 		</div>
 		<footer>
 			Woot
-                        <ul>
-                            <li></li>
-                        </ul>
 		</footer>
 	</body>
 </html>

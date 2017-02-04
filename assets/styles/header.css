@@ -7,7 +7,6 @@ nav ul {
   z-index: 1000;
   list-style-type: none;
   width: 100%;
-  overflow: hidden;
   background-color: #bbb;
   position: fixed;
   top: 0;
@@ -45,6 +44,29 @@ nav li.left {
   border-right-style: solid;
 }
 
+.dropdown {
+  display: inherit;
+  position: relative;
+}
+
+.dropdown-content {
+  display: none;
+  position: absolute;
+  min-width: 160px;
+  z-index: 1000;
+  background-color: inherit;
+}
+
+.dropdown-content a {
+  display: block;
+  position: relative;
+  padding 10px 10px;
+}
+
+.dropdown:hover .dropdown-content {
+  display: block;
+}
+
 nav li.left.special-hover:hover {
   background-position: 0 0;
 }
@@ -78,7 +100,7 @@ nav .icon {
   nav li:not(.icon) {
     display: none;
   }
-  
+
   #main-text {
     float: none;
     display: block;
@@ -86,6 +108,18 @@ nav .icon {
     padding: 16px;
     text-decoration: none;
     border-right-style: none;
+  }
+
+  .dropdown-content {
+    display: none;
+  }
+
+  .dropdown-content a {
+    display: none;
+  }
+
+  .dropdown:hover .dropdown-content {
+    display: none;
   }
 
   nav.responsive li {
@@ -97,5 +131,5 @@ nav .icon {
     display: block;
     text-align: left;
   }
-  
+
 }

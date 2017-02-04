@@ -11,10 +11,12 @@
 	<style>
 	</style>
 	<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.1/jquery.min.js"></script>
+	<script src="http://www.w3schools.com/lib/w3data.js"></script>
 	<script src="./assets/scripts/jquery.blueberry.js"></script>
-	
+
 	<script>
 	$(window).on("load", function() {
+		w3IncludeHTML();
 		$('.blueberry').blueberry();
 	});
 
@@ -23,26 +25,22 @@
 		if(navBar.className === "") {
 			navBar.className += "responsive";
 		}else {
-			navBar.className = ""
+			navBar.className = "";
 		}
 	}
 	</script>
 	<body>
-		<nav id="mainNav" class="">
-			<ul>
-				<li id="main-text" class="left">IT'S MINE!!!</li>
-				<li :hover class="left special-hover"><a href="#">Home</a></li>
-				<li class="left special-hover"><a href="stuff.html">Stuff</a></li>
-				<li class="left special-hover"><a href="about.html">About</a></li>
-				<li class="icon"><a href="javascript:void(0)" onclick="iconClick()" style="">☰</a></li>
-			</ul>
-		</nav>
+		<div w3-include-html="./assets/html/navbar.html"></div>
 		<div id="content">
 		<div>
 		<div class="blueberry">
-			<ul class="slides crop" style="max-height: 240px;">
-				<li><img src="./assets/images/smile.png">Hello World!!!</li>
-				<li><img src="./assets/images/smile.png">Up and running!</li>
+			<ul class="slides crop" style="min-height: 240px;">
+				<li>
+					<img src="./assets/images/eleos.png" alt="ELEOS" style="width:100%;">
+				</li>
+				<li>
+					<img src="https://raw.githubusercontent.com/xDIAMONDSx/CondorFOS/master/images/condor_0.1.png" alt="CondorFOS" style="width:100%;">
+				</li>
 			</ul>
 		</div>
 		<div class="text">
@@ -62,9 +60,6 @@
 		</div>
 		<footer>
 			Woot
-                        <ul>
-                            <li></li>
-                        </ul>
 		</footer>
 	</body>
 </html>
