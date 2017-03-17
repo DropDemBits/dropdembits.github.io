@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="UTF-8" name="viewport" content="width=device-width, initial-scale=1">
+		<link rel="icon" type="image/png" href="../assets/images/smile.png">
+		<link rel="stylesheet" href="../assets/styles/header.css">
+		<link rel="stylesheet" href="../assets/styles/main.css">
+		<link rel="stylesheet" href="../assets/styles/blueberry.css">
+                <title>Some Random Person's Website</title>
+	</head>
+	<style>
+	</style>
+	<script src="./assets/scripts/jquery.min.js"></script>
+
+	<script>
+	function iconClick() {
+		var navBar = document.getElementById("mainNav");
+		if(navBar.className === "") {
+			navBar.className += "responsive";
+		}else {
+			navBar.className = ""
+		}
+	}
+	</script>
+	<body>
+		<nav id="mainNav" class="">
+  			<ul>
+    			<li id="main-text" class="left">DDB | Website</li>
+    			<li :hover class="left special-hover"><a href="../index.html">Home</a></li>
+    			<li class="left special-hover dropdown">
+      				<a href="#">Stuff</a>
+      				<div class="dropdown-content">
+        				<a href="../eleos/index.html">ELEOS</a>
+        				<a href="#">CondorFOS</a>
+      				</div>
+    			</li>
+    			<li class="left special-hover"><a href="about.html">About</a></li>
+    			<li class="icon"><a href="javascript:void(0)" onclick="iconClick()" style="">☰</a></li>
+  			</ul>
+		</nav>
+		
+		<div id="content">
+			<div>
+				<div class="text">
+					<h1>CondorFOS</h1>
+					<p>CondorFOS is a hobbyist kernel.</p>
+					<br>
+					<h3>Versions</h3>
+					<p>
+						Past Versions:
+						<br>
+						0.0.0:
+						<ul style="list-style-type:none">
+							<li>-Functioning GDT</li>
+							<li>-Visual text output</li>
+							<li>-Serial text output</li>
+							<li>-Kernel logger</li>
+						</ul>
+						
+						0.1.0:
+						<ul style="list-style-type:none">
+							<li>-Functional IDT</li>
+							<li>-Kernel Library (libk)</li>
+							<li>-PMM</li>
+						</ul>
+						
+						0.2.0:
+						<ul style="list-style-type:none">
+							<li>-VMM</li>
+							<li>-Paging</li>
+							<li>-Higher half kernel</li>
+							<li>-Check for SSE & SSE2</li>
+						</ul>
+						
+						Planned:
+						<br>
+						0.3.0:
+						<ul style="list-style-type:none">
+							<li>-Keyboard Driver</li>
+							<li>-ATA Driver</li>
+							<li>-Internal Kernel Debugger</li>
+						</ul>
+						Future:
+						<ul style="list-style-type:none">
+							<li>-Multitasking</li>
+							<li>-Command line interface</li>
+							<li>-GUI</li>
+						</ul>
+					</p>
+				</div>
+			</div>
+		</div>
+		<footer>
+			<i>(This text has fallen into /dev/null)</i>
+		</footer>
+	</body>
+</html>

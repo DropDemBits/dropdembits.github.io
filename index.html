@@ -10,13 +10,11 @@
 	</head>
 	<style>
 	</style>
-	<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.1/jquery.min.js"></script>
-	<script src="http://www.w3schools.com/lib/w3data.js"></script>
+	<script src="./assets/scripts/jquery.min.js"></script>
 	<script src="./assets/scripts/jquery.blueberry.js"></script>
 
 	<script>
 	$(window).on("load", function() {
-		w3IncludeHTML();
 		$('.blueberry').blueberry();
 	});
 
@@ -30,36 +28,59 @@
 	}
 	</script>
 	<body>
-		<div w3-include-html="./assets/html/navbar.html"></div>
+		<nav id="mainNav" class="">
+  			<ul>
+    			<li id="main-text" class="left">DDB | Website</li>
+    			<li :hover class="left special-hover"><a href="./index.html">Home</a></li>
+    			<li class="left special-hover dropdown">
+      				<a href="#">Stuff</a>
+      				<div class="dropdown-content">
+        				<a href="./eleos/index.html">ELEOS</a>
+        				<a href="./condorfos/index.html">CondorFOS</a>
+      				</div>
+    			</li>
+    			<li class="left special-hover"><a href="about.html">About</a></li>
+    			<li class="icon"><a href="javascript:void(0)" onclick="iconClick()" style="">☰</a></li>
+  			</ul>
+		</nav>
+		
 		<div id="content">
 		<div>
 		<div class="blueberry">
 			<ul class="slides crop">
 				<li>
-					<img src="./assets/images/eleos.png" alt="ELEOS" style="width:100%;">
+					<picture style="width=100%;">
+						<source srcset="./assets/images/eleos-320.png" media="(max-width: 320px)">
+						<source srcset="./assets/images/eleos-375.png" media="(max-width: 375px)">
+						<source srcset="./assets/images/eleos-425.png" media="(max-width: 425px)">
+						<source srcset="./assets/images/eleos-768.png" media="(max-width: 768px)">
+						<source srcset="./assets/images/eleos-1024.png" media="(max-width: 1024px)">
+						<source srcset="./assets/images/eleos-1200.png" media="(max-width: 1200px)">
+						<img src="./assets/images/eleos-1200.png" alt="ELEOS">
+					</picture>
 				</li>
 				<li>
-					<img src="https://raw.githubusercontent.com/xDIAMONDSx/CondorFOS/master/images/condor_0.1.png" alt="CondorFOS" style="width:100%;">
+					<img src="https://raw.githubusercontent.com/xDIAMONDSx/CondorFOS/master/images/condor_0.1.png" alt="CondorFOS">
 				</li>
 			</ul>
 		</div>
 		<div class="text">
 			<h1>Welcome to the website!</h1>
-			<p>I hope that you'll enjoy your stay here. What you'll find here includes:
+			<p> <i>(This text has fallen into /dev/null)</i>
 				<ul>
 					<li>ELEOS</li>
 					<li>CondorFOS</li>
 					<li>Something being worked on</li>
-					<li><i>Coming SOON&trade;</i></li>
-					<li>Stuff I use</li>
+					<li><i>(This text has fallen into /dev/null)</i></li>
+					<li><i>(This text has fallen into /dev/null)</i></li>
 				</ul>
-				Hope that you'll find what you're looking for!
+				<i>(This text has fallen into /dev/null)</i>
 			</p>
 		</div>
 		</div>
 		</div>
 		<footer>
-			Woot
+			<i>(This text has fallen into /dev/null)</i>
 		</footer>
 	</body>
 </html>

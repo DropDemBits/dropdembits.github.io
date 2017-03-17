@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="UTF-8" name="viewport" content="width=device-width, initial-scale=1">
+		<link rel="icon" type="image/png" href="../assets/images/smile.png">
+		<link rel="stylesheet" href="../assets/styles/header.css">
+		<link rel="stylesheet" href="../assets/styles/main.css">
+		<link rel="stylesheet" href="../assets/styles/blueberry.css">
+                <title>Some Random Person's Website</title>
+	</head>
+	<style>
+	</style>
+	<script src="./assets/scripts/jquery.min.js"></script>
+
+	<script>
+	function iconClick() {
+		var navBar = document.getElementById("mainNav");
+		if(navBar.className === "") {
+			navBar.className += "responsive";
+		}else {
+			navBar.className = ""
+		}
+	}
+	</script>
+	<body>
+		<nav id="mainNav" class="">
+  			<ul>
+    			<li id="main-text" class="left">DDB | Website</li>
+    			<li :hover class="left special-hover"><a href="../index.html">Home</a></li>
+    			<li class="left special-hover dropdown">
+      				<a href="#">Stuff</a>
+      				<div class="dropdown-content">
+        				<a href="#">ELEOS</a>
+        				<a href="../condorfos/index.html">CondorFOS</a>
+      				</div>
+    			</li>
+    			<li class="left special-hover"><a href="about.html">About</a></li>
+    			<li class="icon"><a href="javascript:void(0)" onclick="iconClick()" style="">☰</a></li>
+  			</ul>
+		</nav>
+		
+		<div id="content">
+			<div>
+				<div class="text">
+					<h1>ELEOS</h1>
+					<p>ELEOS is a game where your only goal is to shoot everything.</p>
+					<p>That's it</p>
+					<br>
+					<h3>Features</h3>
+					<p>Things that are in this game include
+						<ul>
+							<li>Chests</li>
+							<li>A Functioning Inventory</li>
+							<li>Some mobs</li>
+							<li>"Customizable" world</li>
+							<li>Various weapons</li>
+						</ul>
+					</p>
+					<h3>Plans</h3>
+					<p>Plans for this (in no obvious order)
+						<ul>
+							<li>Multiplayer</li>
+							<li>Mo' stuff</li>
+							<li>More things to do</li>
+							<li>Speedups</li>
+						</ul>
+					</p>
+					<h3>Downloads</h3>
+					<p>Downloads are at the github repository <a href="https://github.com/DropDemBits/ELEOS">here</a></p>
+				</div>
+			</div>
+		</div>
+		<footer>
+			<i>(This text has fallen into /dev/null)</i>
+		</footer>
+	</body>
+</html>

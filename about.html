@@ -10,14 +10,9 @@
 	</head>
 	<style>
 	</style>
-	<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.1/jquery.min.js"></script>
-	<script src="http://www.w3schools.com/lib/w3data.js"></script>
+	<script src="./assets/scripts/jquery.min.js"></script>
 
 	<script>
-	$(window).on("load", function() {
-		w3IncludeHTML();
-	});
-
 	function iconClick() {
 		var navBar = document.getElementById("mainNav");
 		if(navBar.className === "") {
@@ -28,20 +23,35 @@
 	}
 	</script>
 	<body>
-		<div w3-include-html="./assets/html/navbar.html"></div>
+		<nav id="mainNav" class="">
+  			<ul>
+    			<li id="main-text" class="left">DDB | Website</li>
+    			<li :hover class="left special-hover"><a href="./index.html">Home</a></li>
+    			<li class="left special-hover dropdown">
+      				<a href="#">Stuff</a>
+      				<div class="dropdown-content">
+        				<a href="./eleos/index.html">ELEOS</a>
+        				<a href="./condorfos/index.html">CondorFOS</a>
+      				</div>
+    			</li>
+    			<li class="left special-hover"><a href="about.html">About</a></li>
+    			<li class="icon"><a href="javascript:void(0)" onclick="iconClick()" style="">☰</a></li>
+  			</ul>
+		</nav>
+		
 		<div id="content">
 		<div>
 		<div class="text">
 			<h1>About Someone</h1>
 			<p><i>SOON&trade;</i></p>
-			<p>Contactez-moi @ <a href="mailto:r3usrlnd@gmail.com">le coordinees</a></p>
-			<p>This website is open source, the source can be found at <a href="https://github.com/xDIAMONDSx/xDIAMONDSx.github.io"><p>https://github.com/xDIAMONDSx/xDIAMONDSx.github.io</p></a></p>
+			<p>Email: r (three) usrlnd (at) gmail (dot) com</p>
+			<p>This website is open source, the source can be found at <a href="https://github.com/DropDemBits/dropdembits.github.io"><p>https://github.com/DropDemBits/dropdembits.github.io</p></a></p>
 
 		</div>
 		</div>
 		</div>
 		<footer>
-			Woot
+			<i>(This text has fallen into /dev/null)</i>
 		</footer>
 	</body>
 </html>
