@@ -1,0 +1,39 @@
+* {
+	margin: 0;
+	border: 0;
+	font-family: sans-serif;
+}
+
+.center-box {
+	background-color: orange;
+	border-color: blue;
+	
+	padding: 4%;
+	border-top-width: 15px;
+	
+	position: fixed;
+	top: 50%;
+	left: 50%;
+	
+	transform: translate(-50%, -50%);
+	-webkit-transform: translate(-50%, -50%);
+	-moz-transform: translate(-50%, -50%);
+	-ms-transform: translate(-50%, -50%);
+	-o-transform: translate(-50%, -50%);
+}
+
+.focus-box {
+	background-color: yellow;
+	padding: 2%;
+	text-align: center;
+}
+
+.focus-box p {
+	padding-top: 2%;
+	display: block;
+}
+
+h1, #until {
+	text-align: center;
+	padding: 3%;
+}
