@@ -1,4 +1,4 @@
-var endTimestamp = 1498750200000;
+var endTimestamp = 1498721400000;
 var daysInMs = 1000 * 60 * 60 * 24;
 var hoursInMs = 1000 * 60 * 60;
 var minutesInMs = 1000 * 60;
