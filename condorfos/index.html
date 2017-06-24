@@ -10,32 +10,23 @@
 	</head>
 	<style>
 	</style>
-	<script src="./assets/scripts/jquery.min.js"></script>
-
-	<script>
-	function iconClick() {
-		var navBar = document.getElementById("mainNav");
-		if(navBar.className === "") {
-			navBar.className += "responsive";
-		}else {
-			navBar.className = ""
-		}
-	}
-	</script>
+	<script src="../assets/scripts/jquery.min.js"></script>
+	<script src="../assets/scripts/header.js"></script>
+	
 	<body>
 		<nav id="mainNav" class="">
   			<ul>
     			<li id="main-text" class="left">DDB | Website</li>
     			<li :hover class="left special-hover"><a href="../index.html">Home</a></li>
     			<li class="left special-hover dropdown">
-      				<a href="#">Stuff</a>
-      				<div class="dropdown-content">
-        				<a href="../eleos/index.html">ELEOS</a>
-        				<a href="#">CondorFOS</a>
-        				<a href="../countdown/index.html">A Special Countdown</a>
-      				</div>
+      				<a href="javascript:void(0)" onclick="dropdownClick()" style="">Stuff<img id="arrow" src="../assets/images/arrow.png"/></a>
+      				<ul class="dropdown-content">
+        				<li><a href="../eleos/index.html">ELEOS</a></li>
+        				<li><a href="../condorfos/index.html">CondorFOS</a></li>
+        				<li><a href="../countdown/index.html">A Special Countdown</a></li>
+      				</ul>
     			</li>
-    			<li class="left special-hover"><a href="about.html">About</a></li>
+    			<li class="left special-hover"><a href="../about.html">About</a></li>
     			<li class="icon"><a href="javascript:void(0)" onclick="iconClick()" style="">☰</a></li>
   			</ul>
 		</nav>

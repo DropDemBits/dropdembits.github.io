@@ -8,7 +8,7 @@ nav ul {
   z-index: 1000;
   list-style-type: none;
   width: 100%;
-  background-color: #bbb;
+  background-color: #FAFFFD;
   position: fixed;
   top: 0;
   display: inline-block
@@ -17,20 +17,20 @@ nav ul {
 nav li {
   background-repeat: no-repeat;
   float: left;
-  background-color: #bbb;
+  background-color: inherit;
   transition: 0.3s;
 }
 
 nav li.right {
   float: right;
   display: block;
-  color: white;
+  color: #3F403F;
   padding: 16px;
   text-decoration: none;
 }
 
 nav li.left {
-  background-image: linear-gradient(#bbb, #eee);
+  background-image: linear-gradient(#FAFFFD, #E1E5E4);
   background-size: auto 200%;
   background-position: 0 -100%;
   transition: background-position 0.5s;
@@ -39,7 +39,7 @@ nav li.left {
 #main-text {
   float: left;
   display: inline-block;
-  color: white;
+  color: #3F403F;
   padding: 16px;
   text-decoration: none;
   border-right-style: solid;
@@ -55,10 +55,11 @@ nav li.left {
   position: absolute;
   min-width: 160px;
   z-index: 1000;
-  background-color: inherit;
+  background-color: #E1E5E4;
+  margin: 3.1em 0em;
 }
 
-.dropdown-content a {
+.dropdown-content li {
   display: block;
   position: relative;
   padding 10px 10px;
@@ -74,13 +75,20 @@ nav li.left.special-hover:hover {
 
 nav a {
     display: block;
-    color: white;
+    color: #3F403F;
     padding: 16px;
     text-decoration: none;
 }
 
 nav .icon {
   display: none;
+}
+
+#arrow {
+	display: none;
+	height: 1.5em; 
+	width: 1.5em;
+	float: right;
 }
 
 @media screen and (max-width: 768px) {
@@ -105,18 +113,10 @@ nav .icon {
   #main-text {
     float: none;
     display: block;
-    color: white;
+    color: #3F403F;
     padding: 16px;
     text-decoration: none;
     border-right-style: none;
-  }
-
-  .dropdown-content {
-    display: none;
-  }
-
-  .dropdown-content a {
-    display: none;
   }
 
   .dropdown:hover .dropdown-content {
@@ -126,6 +126,7 @@ nav .icon {
   nav.responsive li {
     float: none;
     display: block;
+    background
   }
 
   nav.responsive li a {
@@ -133,4 +134,7 @@ nav .icon {
     text-align: left;
   }
 
+  #arrow {
+	display: inline-block;
+  }
 }
