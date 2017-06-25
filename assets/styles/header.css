@@ -4,14 +4,18 @@
   font-family: sans-serif;
 }
 
-nav ul {
-  z-index: 1000;
-  list-style-type: none;
+nav {
+  z-index: 10;
   width: 100%;
+  height: 51px;
   background-color: #FAFFFD;
   position: fixed;
   top: 0;
-  display: inline-block
+}
+
+nav ul {
+  list-style-type: none;
+  display: inline-block;
 }
 
 nav li {
@@ -19,6 +23,7 @@ nav li {
   float: left;
   background-color: inherit;
   transition: 0.3s;
+  opacity: .99;
 }
 
 nav li.right {
@@ -47,16 +52,17 @@ nav li.left {
 
 .dropdown {
   display: inherit;
-  position: relative;
+  position: inherit;
 }
 
 .dropdown-content {
-  display: none;
-  position: absolute;
-  min-width: 160px;
-  z-index: 1000;
+  position: fixed;
+  max-width: 160px;
+  z-index: -1;
   background-color: #E1E5E4;
-  margin: 3.1em 0em;
+  opacity: 0;
+  transform: translateY(-15em);
+  transition: all .5s ease-out, transform .5s ease-out, opacity .6s ease-out;
 }
 
 .dropdown-content li {
@@ -67,6 +73,9 @@ nav li.left {
 
 .dropdown:hover .dropdown-content {
   display: block;
+  opacity: 1;
+  transform: translateY(0em);
+  z-index: -1;
 }
 
 nav li.left.special-hover:hover {
@@ -74,10 +83,11 @@ nav li.left.special-hover:hover {
 }
 
 nav a {
-    display: block;
-    color: #3F403F;
-    padding: 16px;
-    text-decoration: none;
+  display: block;
+  color: #3F403F;
+  padding: 16px;
+  text-decoration: none;
+  z-index: inherit;
 }
 
 nav .icon {
@@ -92,6 +102,10 @@ nav .icon {
 }
 
 @media screen and (max-width: 768px) {
+  nav {
+    position: relative;
+  }
+  
   nav .icon {
     float: right;
     display: inline-block;
@@ -126,15 +140,43 @@ nav .icon {
   nav.responsive li {
     float: none;
     display: block;
-    background
   }
 
   nav.responsive li a {
     display: block;
     text-align: left;
   }
-
+  
+  .menu {
+    background-color: #E1E5E4;
+    width: 100%;
+    overflow: auto;
+  }
+  
+  .dropdown-content {
+  	position: absolute;
+  	z-index: auto;
+    display: none;
+    background-color: #A3A6A4;
+    width: 100%;
+    max-width: 100%;
+    transform: none;
+    opacity: 1;
+    transform: translateY(3em);
+  }
+  
+  .dropdown:hover .dropdown-content {
+    display: none;
+    z-index: auto;
+    transform: translateY(3em);
+  }
+  
+  nav li.left {
+    background-image: linear-gradient(#E1E5E4, #C8CCCA, #E1E5E4);
+  }
+  
   #arrow {
 	display: inline-block;
+	float: right;
   }
 }

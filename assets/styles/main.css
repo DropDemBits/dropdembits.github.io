@@ -49,4 +49,8 @@ footer {
     background-color: #FFFFFF;
     margin: 0.125em;
   }
+  
+  #content div {
+    margin-top: 0em;
+  }
 }
