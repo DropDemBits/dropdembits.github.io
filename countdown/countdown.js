@@ -1,16 +1,20 @@
-var endTimestamp = 1498764600000;
+var endTimestamp = new Date(1498764600000);
 var daysInMs = 1000 * 60 * 60 * 24;
 var hoursInMs = 1000 * 60 * 60;
 var minutesInMs = 1000 * 60;
 
 function updateTime() {
-	var timeUntil = endTimestamp - new Date().getTime();
+	var timeUntil = endTimestamp.getTime() - new Date().getTime();
+	var until = document.getElementById("until");
+	
 	if(timeUntil <= 0) {
 		var center_box = document.getElementsByClassName("center-box");
-		var until = document.getElementById("until");
-		
-		until.innerHTML = 'Since June 29th, 11:30am<br>Enjoy the break while it lasts!';
-		timeUntil = new Date().getTime() - endTimestamp;
+			
+		until.innerHTML = 'Since '+endTimestamp.toLocaleString()+'<br>Enjoy the break while it lasts!';
+		timeUntil = new Date().getTime() - endTimestamp.getTime();
+	}
+	else {	
+	    until.innerHTML = 'Until '+endTimestamp.toLocaleString();
 	}
 	
 	var days = document.getElementById("days");
@@ -35,7 +39,7 @@ function updateTime() {
 	if(Math.floor(hoursUntil) != 1) hours.textContent = hours.textContent + 's';
 	if(Math.floor(minutesUntil) != 1) minutes.textContent = minutes.textContent + 's';
 	if(Math.floor(secondsUntil) != 1) seconds.textContent = seconds.textContent + 's';
-	if(Math.floor(millisUntil) != 1) millis.textContent = millis.textContent + 's'
+	if(Math.floor(millisUntil) != 1) millis.textContent = millis.textContent + 's';
 }
 
 window.setInterval(updateTime, 1);
