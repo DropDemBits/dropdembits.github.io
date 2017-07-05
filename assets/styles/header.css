@@ -56,26 +56,26 @@ nav li.left {
 }
 
 .dropdown-content {
+  display: block;
+  visibility: hidden;
   position: fixed;
   max-width: 160px;
   z-index: -1;
   background-color: #E1E5E4;
   opacity: 0;
-  transform: translateY(-15em);
-  transition: all .5s ease-out, transform .5s ease-out, opacity .6s ease-out;
+  transform: translateY(-1.5em);
+  transition: all .0625s ease-out;
 }
 
 .dropdown-content li {
-  display: block;
   position: relative;
   padding 10px 10px;
 }
 
 .dropdown:hover .dropdown-content {
-  display: block;
+  visibility: visible;
   opacity: 1;
   transform: translateY(0em);
-  z-index: -1;
 }
 
 nav li.left.special-hover:hover {
@@ -167,7 +167,6 @@ nav .icon {
   
   .dropdown:hover .dropdown-content {
     display: none;
-    z-index: auto;
     transform: translateY(3em);
   }
   
