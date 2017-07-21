@@ -1,4 +1,4 @@
-var endTimestamp = new Date(1498764600000);
+var endTimestamp = new Date(1504526400000); //was 1498764600000
 var daysInMs = 1000 * 60 * 60 * 24;
 var hoursInMs = 1000 * 60 * 60;
 var minutesInMs = 1000 * 60;
@@ -10,7 +10,7 @@ function updateTime() {
 	if(timeUntil <= 0) {
 		var center_box = document.getElementsByClassName("center-box");
 			
-		until.innerHTML = 'Since '+endTimestamp.toLocaleString()+'<br>Enjoy the break while it lasts!';
+		until.innerHTML = 'Since '+endTimestamp.toLocaleString()+'<br>It begins...';
 		timeUntil = new Date().getTime() - endTimestamp.getTime();
 	}
 	else {	
