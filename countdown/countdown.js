@@ -1,4 +1,4 @@
-var endTimestamp = new Date(1504526400000); //was 1498764600000
+var endTimestamp = new Date(1504612800000); //was 1498764600000
 var daysInMs = 1000 * 60 * 60 * 24;
 var hoursInMs = 1000 * 60 * 60;
 var minutesInMs = 1000 * 60;
