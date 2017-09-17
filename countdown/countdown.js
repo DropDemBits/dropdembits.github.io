@@ -1,11 +1,12 @@
 var endTimestamp = [
-	[new Date(1504526400000), "It begins..."],
+	[new Date(1504612800000), "It begins..."],
 	[new Date(1514005200000), "Have a break."],
 	[new Date(1516971600000), "Your examination is ready."],
 	[new Date(1520658000000), "Have another break."],
 	[new Date(1529668800000), "Your other examination<br>is ready."],
 	[new Date(1530209100000), "It is finished."],
 ];
+
 var daysInMs = 1000 * 60 * 60 * 24;
 var hoursInMs = 1000 * 60 * 60;
 var minutesInMs = 1000 * 60;
