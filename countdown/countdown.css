@@ -37,3 +37,27 @@ h1, #until {
 	text-align: center;
 	padding: 3%;
 }
+
+.timerbts {
+    display: inline;
+    border-radius: 3px;
+    background-color: #f1f1f1;
+}
+
+.timerbts:hover {
+    background-color: #d1d1f1;
+}
+
+#prev-timer {
+    float: left;
+}
+
+#next-timer {
+    float: right;
+}
+
+#timerCount {
+    display: inline;
+    text-align: center;
+}
+

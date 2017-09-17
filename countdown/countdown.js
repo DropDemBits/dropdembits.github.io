@@ -1,20 +1,29 @@
-var endTimestamp = new Date(1504526400000); //was 1498764600000
+var endTimestamp = [
+  [new Date(1504526400000), "It begins..."],
+  [new Date(1514005200000), "Have a break."],
+  [new Date(1516971600000), "Your examination is ready."],
+  [new Date(1520658000000), "Have another break."],
+  [new Date(1529668800000), "Your other examination<br>is ready."],
+  [new Date(1530209100000), "It is finished."],
+];
 var daysInMs = 1000 * 60 * 60 * 24;
 var hoursInMs = 1000 * 60 * 60;
 var minutesInMs = 1000 * 60;
 
+var timerIndex = 0;
+
 function updateTime() {
-	var timeUntil = endTimestamp.getTime() - new Date().getTime();
+	var timeUntil = endTimestamp[timerIndex][0].getTime() - new Date().getTime();
 	var until = document.getElementById("until");
 	
 	if(timeUntil <= 0) {
 		var center_box = document.getElementsByClassName("center-box");
 			
-		until.innerHTML = 'Since '+endTimestamp.toLocaleString()+'<br>It begins...';
-		timeUntil = new Date().getTime() - endTimestamp.getTime();
+		until.innerHTML = 'Since '+endTimestamp[timerIndex][0].toLocaleString()+'<br>'+endTimestamp[timerIndex][1];
+		timeUntil = new Date().getTime() - endTimestamp[timerIndex][0].getTime();
 	}
 	else {	
-	    until.innerHTML = 'Until '+endTimestamp.toLocaleString();
+	  until.innerHTML = 'Until '+endTimestamp[timerIndex][0].toLocaleString()+'<br>'+endTimestamp[timerIndex][1];
 	}
 	
 	var days = document.getElementById("days");
@@ -40,6 +49,17 @@ function updateTime() {
 	if(Math.floor(minutesUntil) != 1) minutes.textContent = minutes.textContent + 's';
 	if(Math.floor(secondsUntil) != 1) seconds.textContent = seconds.textContent + 's';
 	if(Math.floor(millisUntil) != 1) millis.textContent = millis.textContent + 's';
+}
+
+function changeTimerSelect(change) {
+  timerIndex += change;
+  
+  if(timerIndex < 0) timerIndex = endTimestamp.length - 1;
+  else if(timerIndex >= endTimestamp.length) timerIndex = 0;
+  
+  var timerCount = document.getElementById("timerCount");
+  if(timerCount != null)
+  timerCount.innerText = "Timer {0}/{1}".replace("{0}", (timerIndex+1).toString()).replace("{1}", endTimestamp.length.toString());
 }
 
 window.setInterval(updateTime, 1);

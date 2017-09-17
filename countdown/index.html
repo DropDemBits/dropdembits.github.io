@@ -9,7 +9,7 @@
 
 <script src="countdown.js"></script>
 
-<body>
+<body onload="changeTimerSelect(0);">
   <div class="center-box">
     <h1>There are...</h1>
     <div class="focus-box">
@@ -19,7 +19,12 @@
       <p id="seconds">n<p>
       <p id="millis">n<p>
     </div>
-    <p id="until">Until June 29th, 3:30pm EDT</p>
+    <p id="until">Until sometime</p>
+    <div style="text-align: center;">
+      <button id="prev-timer" class="timerbts" onclick="changeTimerSelect(-1)">&lt;</button>
+      <p id="timerCount">Timer</p>
+      <button id="next-timer" class="timerbts" onclick="changeTimerSelect(+1)">&gt;</button>
+    </div>
   </div>
   <p id="who">Created by <a href="https://dropdembits.github.io">DropDemBits</a></p>
 </body>
