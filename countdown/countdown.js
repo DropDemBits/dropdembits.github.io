@@ -1,10 +1,10 @@
 var endTimestamp = [
-  [new Date(1504526400000), "It begins..."],
-  [new Date(1514005200000), "Have a break."],
-  [new Date(1516971600000), "Your examination is ready."],
-  [new Date(1520658000000), "Have another break."],
-  [new Date(1529668800000), "Your other examination<br>is ready."],
-  [new Date(1530209100000), "It is finished."],
+	[new Date(1504526400000), "It begins..."],
+	[new Date(1514005200000), "Have a break."],
+	[new Date(1516971600000), "Your examination is ready."],
+	[new Date(1520658000000), "Have another break."],
+	[new Date(1529668800000), "Your other examination<br>is ready."],
+	[new Date(1530209100000), "It is finished."],
 ];
 var daysInMs = 1000 * 60 * 60 * 24;
 var hoursInMs = 1000 * 60 * 60;
@@ -17,13 +17,11 @@ function updateTime() {
 	var until = document.getElementById("until");
 	
 	if(timeUntil <= 0) {
-		var center_box = document.getElementsByClassName("center-box");
-			
 		until.innerHTML = 'Since '+endTimestamp[timerIndex][0].toLocaleString()+'<br>'+endTimestamp[timerIndex][1];
 		timeUntil = new Date().getTime() - endTimestamp[timerIndex][0].getTime();
 	}
 	else {	
-	  until.innerHTML = 'Until '+endTimestamp[timerIndex][0].toLocaleString()+'<br>'+endTimestamp[timerIndex][1];
+		until.innerHTML = 'Until '+endTimestamp[timerIndex][0].toLocaleString()+'<br>'+endTimestamp[timerIndex][1];
 	}
 	
 	var days = document.getElementById("days");
@@ -52,14 +50,14 @@ function updateTime() {
 }
 
 function changeTimerSelect(change) {
-  timerIndex += change;
-  
-  if(timerIndex < 0) timerIndex = endTimestamp.length - 1;
-  else if(timerIndex >= endTimestamp.length) timerIndex = 0;
-  
-  var timerCount = document.getElementById("timerCount");
-  if(timerCount != null)
-  timerCount.innerText = "Timer {0}/{1}".replace("{0}", (timerIndex+1).toString()).replace("{1}", endTimestamp.length.toString());
+	timerIndex += change;
+	
+	if(timerIndex < 0) timerIndex = endTimestamp.length - 1;
+	else if(timerIndex >= endTimestamp.length) timerIndex = 0;
+	
+	var timerCount = document.getElementById("timerCount");
+	if(timerCount != null)
+	timerCount.innerText = "Timer {0}/{1}".replace("{0}", (timerIndex+1).toString()).replace("{1}", endTimestamp.length.toString());
 }
 
 window.setInterval(updateTime, 1);

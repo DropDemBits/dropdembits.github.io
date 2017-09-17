@@ -2,30 +2,35 @@
 
 <html>
 <head>
-  <title>This many days until...</title>
-  <meta charset="utf-8" name="viewport" content="width=device-width, initial-scale=1">
-  <link rel="stylesheet" type="text/css" href="countdown.css">
+	<title>This many days until...</title>
+	<meta charset="utf-8" name="viewport" content="width=device-width, initial-scale=1">
+	<link rel="stylesheet" type="text/css" href="countdown.css">
 </head>
 
 <script src="countdown.js"></script>
 
 <body onload="changeTimerSelect(0);">
-  <div class="center-box">
-    <h1>There are...</h1>
-    <div class="focus-box">
-      <p id="days">n<p>
-      <p id="hours">n<p>
-      <p id="minutes">n<p>
-      <p id="seconds">n<p>
-      <p id="millis">n<p>
-    </div>
-    <p id="until">Until sometime</p>
-    <div style="text-align: center;">
-      <button id="prev-timer" class="timerbts" onclick="changeTimerSelect(-1)">&lt;</button>
-      <p id="timerCount">Timer</p>
-      <button id="next-timer" class="timerbts" onclick="changeTimerSelect(+1)">&gt;</button>
-    </div>
-  </div>
-  <p id="who">Created by <a href="https://dropdembits.github.io">DropDemBits</a></p>
+<div class="wrapper">
+	<div class="center-box">
+		<h1>There are...</h1>
+		<div class="focus-box">
+			<p id="days">n<p>
+			<p id="hours">n<p>
+			<p id="minutes">n<p>
+			<p id="seconds">n<p>
+			<p id="millis">n<p>
+		</div> <!-- .focus-box -->
+		
+		<p id="until">Until sometime in the future</p>
+		
+		<div style="text-align: center;">
+			<button id="prev-timer" class="timerbts" onclick="changeTimerSelect(-1)">&lt;</button>
+			<p id="timerCount">Timer</p>
+			<button id="next-timer" class="timerbts" onclick="changeTimerSelect(+1)">&gt;</button>
+		</div>
+	</div> <!-- .center-box -->
+	
+	<p id="who">Created by <a href="https://dropdembits.github.io">DropDemBits</a></p>
+</div> <!-- .wrapper -->
 </body>
 </html>
