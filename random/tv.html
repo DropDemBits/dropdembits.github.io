@@ -1,0 +1,58 @@
+<html>
+<meta charset="utf-8">
+<title>C'est l'onglet</title>
+</meta>
+<style>
+* {
+    font-family: sans-serif;
+}
+
+body {
+    background: linear-gradient(270deg, #ff0000, #ffa500, #ffff00, #008000, #0000ff, #4b0082, #ee82ee);
+    background-size: 1400% 1400%;
+
+    -webkit-animation: moveme 20s ease infinite;
+    -moz-animation: moveme 20s ease infinite;
+    -o-animation: moveme 20s ease infinite;
+    animation: moveme 20s ease infinite;
+}
+
+@-webkit-keyframes moveme {
+    0%{background-position:0% 50%}
+    50%{background-position:100% 50%}
+    100%{background-position:0% 50%}
+}
+@-moz-keyframes moveme {
+    0%{background-position:0% 50%}
+    50%{background-position:100% 50%}
+    100%{background-position:0% 50%}
+}
+@-o-keyframes moveme {
+    0%{background-position:0% 50%}
+    50%{background-position:100% 50%}
+    100%{background-position:0% 50%}
+}
+@keyframes moveme { 
+    0%{background-position:0% 50%}
+    50%{background-position:100% 50%}
+    100%{background-position:0% 50%}
+}
+
+.wrapper {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    grid-template-rows: repeat(3, 1fr);
+}
+
+h1 {
+    grid-column: 2;
+    grid-row: 2;
+}
+
+</style>
+<body>
+<div class="wrapper">
+  <h1 style="text-align: center; font-size: 48pt">C'est un télévision</h1>
+</div>
+</body>
+</html>
