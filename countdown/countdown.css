@@ -59,3 +59,8 @@ h1, #until {
 	text-align: center;
 }
 
+@media only screen and (max-width: 320px) {
+	.wrapper {
+		grid-template-columns: 1fr 90% 1fr;
+	}
+}
