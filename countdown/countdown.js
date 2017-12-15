@@ -1,8 +1,9 @@
 var endTimestamp = [
 	[new Date(1504612800000), "It begins..."],
 	[new Date(1513969500000), "Have a break."],
-    [new Date(1514091600000), "On Chistmas Eve..."],
+	[new Date(1514091600000), "On Chistmas Eve..."],
 	[new Date(1514178000000), "Oh Christmas tree,<br>oh Christmas tree..."],
+	[new Date(1514782800000), "'Ere come 2018..."],
 	[new Date(1516971600000), "Your examination is ready."],
 	[new Date(1520658000000), "Have another break."],
 	[new Date(1529668800000), "Your other examination<br>is ready."],
