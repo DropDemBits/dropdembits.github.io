@@ -1,0 +1,31 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<map version="1.0" tiledversion="1.1.6" orientation="orthogonal" renderorder="right-down" width="50" height="40" tilewidth="8" tileheight="8" infinite="0" nextobjectid="19">
+ <tileset firstgid="1" source="Tileset0.tsx"/>
+ <layer name="MainTiles" width="50" height="40">
+  <data encoding="base64" compression="zlib">
+   eJzt1DEKwDAQA8EDJ5D/vziuU6bRWuyAem9xXjOzHG6nsoPFDpa2jtPZwWIHy/e/uvbuvSf5qB/a/l07GFo7vPMsO1haO7zzLDtYWju88yw7WFo7vPMsO1haOxxjL83IBEA=
+  </data>
+ </layer>
+ <objectgroup name="EntitySpawn">
+  <object id="11" name="Player Spawn" type="playerspawn" x="16.5" y="73.5">
+   <point/>
+  </object>
+  <object id="12" name="Guard #1" type="simpleGuard" x="312.5" y="233">
+   <properties>
+    <property name="FollowPath" value="Path1"/>
+   </properties>
+   <point/>
+  </object>
+  <object id="18" name="Path1" type="Path" x="152" y="232">
+   <polyline points="0,0 200,0"/>
+  </object>
+ </objectgroup>
+ <objectgroup name="Transitions">
+  <object id="1" name="GoingEntry" type="Transition" x="0.556818" y="63.962" width="7.375" height="39.875">
+   <properties>
+    <property name="TargetLevel" value="Climbing"/>
+    <property name="TargetTransition" value="ClimbingExit"/>
+   </properties>
+  </object>
+ </objectgroup>
+</map>
