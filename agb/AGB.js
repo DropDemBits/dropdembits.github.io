@@ -806,9 +806,9 @@ ApplicationMain.create = function(config) {
 	ManifestResources.init(config);
 	var _this = app.meta;
 	if(__map_reserved["build"] != null) {
-		_this.setReserved("build","20");
+		_this.setReserved("build","32");
 	} else {
-		_this.h["build"] = "20";
+		_this.h["build"] = "32";
 	}
 	var _this1 = app.meta;
 	if(__map_reserved["company"] != null) {
@@ -4089,7 +4089,7 @@ openfl_display_Sprite.prototype = $extend(openfl_display_DisplayObjectContainer.
 });
 var Main = function() {
 	openfl_display_Sprite.call(this);
-	this.addChild(new flixel_FlxGame(336,252,ddb_agb_MenuState));
+	this.addChild(new flixel_FlxGame(320,240,ddb_agb_MenuState));
 };
 $hxClasses["Main"] = Main;
 Main.__name__ = ["Main"];
@@ -4322,7 +4322,7 @@ ManifestResources.init = function(config) {
 	var data;
 	var manifest;
 	var library;
-	data = "{\"name\":null,\"assets\":\"aoy4:pathy39:assets%2Fsounds%2Fsound_placeholder.txty4:sizezy4:typey4:TEXTy2:idR1y7:preloadtgoR0y34:assets%2Fdata%2FC01L01R00_Allo.tmxR2i4628R3R4R5R7R6tgoR0y38:assets%2Fdata%2FC01L01R01_Climbing.tmxR2i5094R3R4R5R8R6tgoR0y28:assets%2Fdata%2FTileset0.tsxR2i355R3R4R5R9R6tgoR0y35:assets%2Fdata%2FC01L01R02_Going.tmxR2i1267R3R4R5R10R6tgoR0y33:assets%2Fimages%2FplayerAtlas.pngR2i2433R3y5:IMAGER5R11R6tgoR0y32:assets%2Fimages%2Ftileatlas0.pngR2i331R3R12R5R13R6tgoR0y33:assets%2Fimages%2FmoveButtons.pngR2i3427R3R12R5R14R6tgoR0y26:assets%2Fimages%2Ficon.pngR2i418R3R12R5R15R6tgoR0y33:assets%2Fimages%2FentityAtlas.pngR2i792R3R12R5R16R6tgoR2i682247R3y5:SOUNDR5y25:assets%2Fmusic%2Faloe.oggy9:pathGroupaR18hR6tgoR2i39706R3y5:MUSICR5y28:flixel%2Fsounds%2Fflixel.mp3R19aR21y28:flixel%2Fsounds%2Fflixel.ogghR6tgoR2i2114R3R20R5y26:flixel%2Fsounds%2Fbeep.mp3R19aR23y26:flixel%2Fsounds%2Fbeep.ogghR6tgoR2i5794R3R17R5R24R19aR23R24hgoR2i33629R3R17R5R22R19aR21R22hgoR2i15744R3y4:FONTy9:classNamey35:__ASSET__flixel_fonts_nokiafc22_ttfR5y30:flixel%2Ffonts%2Fnokiafc22.ttfR6tgoR2i29724R3R25R26y36:__ASSET__flixel_fonts_monsterrat_ttfR5y31:flixel%2Ffonts%2Fmonsterrat.ttfR6tgoR0y33:flixel%2Fimages%2Fui%2Fbutton.pngR2i519R3R12R5R31R6tgoR0y36:flixel%2Fimages%2Flogo%2Fdefault.pngR2i3280R3R12R5R32R6tgh\",\"rootPath\":null,\"version\":2,\"libraryArgs\":[],\"libraryType\":null}";
+	data = "{\"name\":null,\"assets\":\"aoy4:pathy39:assets%2Fsounds%2Fsound_placeholder.txty4:sizezy4:typey4:TEXTy2:idR1y7:preloadtgoR0y34:assets%2Fdata%2FC01L01R00_Allo.tmxR2i903R3R4R5R7R6tgoR0y35:assets%2Fdata%2FC01_01_03_Final.tmxR2i773R3R4R5R8R6tgoR0y38:assets%2Fdata%2FC01L01R01_Climbing.tmxR2i1275R3R4R5R9R6tgoR0y28:assets%2Fdata%2FTileset0.tsxR2i355R3R4R5R10R6tgoR0y38:assets%2Fdata%2FC01_01_02_FlipFlop.tmxR2i1575R3R4R5R11R6tgoR0y35:assets%2Fdata%2FC01L01R02_Going.tmxR2i3007R3R4R5R12R6tgoR0y39:assets%2Fdata%2FC01_01_03_BlipBlock.tmxR2i1343R3R4R5R13R6tgoR0y33:assets%2Fimages%2FplayerAtlas.pngR2i3145R3y5:IMAGER5R14R6tgoR0y32:assets%2Fimages%2Ftileatlas0.pngR2i518R3R15R5R16R6tgoR0y33:assets%2Fimages%2FmoveButtons.pngR2i3427R3R15R5R17R6tgoR0y33:assets%2Fimages%2FpuzzleAtlas.pngR2i896R3R15R5R18R6tgoR0y26:assets%2Fimages%2Ficon.pngR2i418R3R15R5R19R6tgoR0y33:assets%2Fimages%2FentityAtlas.pngR2i792R3R15R5R20R6tgoR2i682247R3y5:SOUNDR5y25:assets%2Fmusic%2Faloe.oggy9:pathGroupaR22hR6tgoR2i39706R3y5:MUSICR5y28:flixel%2Fsounds%2Fflixel.mp3R23aR25y28:flixel%2Fsounds%2Fflixel.ogghR6tgoR2i2114R3R24R5y26:flixel%2Fsounds%2Fbeep.mp3R23aR27y26:flixel%2Fsounds%2Fbeep.ogghR6tgoR2i5794R3R21R5R28R23aR27R28hgoR2i33629R3R21R5R26R23aR25R26hgoR2i15744R3y4:FONTy9:classNamey35:__ASSET__flixel_fonts_nokiafc22_ttfR5y30:flixel%2Ffonts%2Fnokiafc22.ttfR6tgoR2i29724R3R29R30y36:__ASSET__flixel_fonts_monsterrat_ttfR5y31:flixel%2Ffonts%2Fmonsterrat.ttfR6tgoR0y33:flixel%2Fimages%2Fui%2Fbutton.pngR2i519R3R15R5R35R6tgoR0y36:flixel%2Fimages%2Flogo%2Fdefault.pngR2i3280R3R15R5R36R6tgh\",\"rootPath\":null,\"version\":2,\"libraryArgs\":[],\"libraryType\":null}";
 	manifest = lime_utils_AssetManifest.parse(data,rootPath);
 	library = lime_utils_AssetLibrary.fromManifest(manifest);
 	lime_utils_Assets.registerLibrary("default",library);
@@ -5226,10 +5226,13 @@ Xml.prototype = {
 	,__class__: Xml
 };
 var ddb_agb_LevelData = function(levelPath) {
+	this.isLoaded = false;
 	this.grpTransitions = new flixel_group_FlxTypedGroup();
 	this.grpSimpleGuards = new flixel_group_FlxTypedGroup();
+	this.puzzleEntities = new flixel_group_FlxTypedGroup();
+	this.grpTriggers = new flixel_group_FlxTypedGroup();
 	this.playerSpawnPos = new flixel_math_FlxPoint();
-	this._transition2idx = new haxe_ds_StringMap();
+	this.transitionMap = new haxe_ds_StringMap();
 	this._pathList = new haxe_ds_StringMap();
 	this.map = this.loadMap(levelPath);
 	this.currentTiles = this.getTiles(this.map,"assets/images/tileatlas0.png");
@@ -5264,15 +5267,34 @@ var ddb_agb_LevelData = function(levelPath) {
 			}
 		}
 	}
-	this.resetLevel();
-	if(this.map.getLayer("Transitions") != null) {
-		var transitionEntities = this.map.getLayer("Transitions");
+	if(this.map.getLayer("EventTriggers") != null) {
+		var triggers = this.map.getLayer("EventTriggers");
 		var _g6 = 0;
-		var _g11 = transitionEntities.objects;
+		var _g11 = triggers.objects;
 		while(_g6 < _g11.length) {
 			var e1 = _g11[_g6];
 			++_g6;
-			this.placeTransition(e1.name,e1.type,e1.xmlData.x,e1.properties);
+			this.placeTrigger(e1.name,e1.type,e1.xmlData.x,e1.properties);
+		}
+	}
+	if(this.map.getLayer("EntitySpawn") != null) {
+		var spawnEntities = this.map.getLayer("EntitySpawn");
+		var _g7 = 0;
+		var _g12 = spawnEntities.objects;
+		while(_g7 < _g12.length) {
+			var e2 = _g12[_g7];
+			++_g7;
+			this.placeEntity(e2.type,e2.xmlData.x,e2.properties);
+		}
+	}
+	if(this.map.getLayer("Transitions") != null) {
+		var transitionEntities = this.map.getLayer("Transitions");
+		var _g8 = 0;
+		var _g13 = transitionEntities.objects;
+		while(_g8 < _g13.length) {
+			var e3 = _g13[_g8];
+			++_g8;
+			this.placeTransition(e3.name,e3.type,e3.xmlData.x,e3.properties);
 		}
 	} else {
 		var _this1 = flixel_FlxG.log;
@@ -5285,41 +5307,73 @@ ddb_agb_LevelData.prototype = {
 	,currentTiles: null
 	,grpTransitions: null
 	,grpSimpleGuards: null
+	,puzzleEntities: null
+	,grpTriggers: null
 	,playerSpawnPos: null
+	,isLoaded: null
 	,_pathList: null
-	,_transition2idx: null
+	,transitionMap: null
 	,loadLevelState: function(state) {
 		this.currentTiles.follow();
+		state.add(this.puzzleEntities);
 		state.add(this.currentTiles);
 		state.add(this.grpTransitions);
 		state.add(this.grpSimpleGuards);
+		state.add(this.grpTriggers);
 	}
 	,unloadLevelState: function(state) {
+		this.isLoaded = false;
+		state.remove(this.puzzleEntities);
 		state.remove(this.currentTiles);
 		state.remove(this.grpTransitions);
 		state.remove(this.grpSimpleGuards);
+		state.remove(this.grpTriggers);
 	}
 	,getTransition: function(transitionName) {
-		var _this = this._transition2idx;
-		var idx = __map_reserved[transitionName] != null ? _this.getReserved(transitionName) : _this.h[transitionName];
-		if(idx == null) {
-			return null;
+		var _this = this.transitionMap;
+		if(__map_reserved[transitionName] != null) {
+			return _this.getReserved(transitionName);
+		} else {
+			return _this.h[transitionName];
 		}
-		return this.grpTransitions.members[idx];
 	}
 	,resetLevel: function() {
-		this.grpSimpleGuards.forEach(function(e) {
-			e.destroy();
-		});
-		this.grpSimpleGuards.clear();
-		if(this.map.getLayer("EntitySpawn") != null) {
-			var spawnEntities = this.map.getLayer("EntitySpawn");
-			var _g = 0;
-			var _g1 = spawnEntities.objects;
-			while(_g < _g1.length) {
-				var e1 = _g1[_g];
-				++_g;
-				this.placeEntity(e1.type,e1.xmlData.x,e1.properties);
+		var spawnEntities = this.map.getLayer("EntitySpawn");
+		var iteratorGuards = new flixel_group_FlxTypedGroupIterator(this.grpSimpleGuards.members,null);
+		var iteratorPuzzles = new flixel_group_FlxTypedGroupIterator(this.puzzleEntities.members,null);
+		var currentPuzzleEntity = iteratorPuzzles.next();
+		var currentGuard = iteratorGuards.next();
+		var _g = 0;
+		var _g1 = spawnEntities.objects;
+		while(_g < _g1.length) {
+			var e = _g1[_g];
+			++_g;
+			var x = e.x;
+			var y = e.y;
+			var _g2 = e.type;
+			switch(_g2) {
+			case "door":
+				if(currentPuzzleEntity != null) {
+					if(!js_Boot.__instanceof(currentPuzzleEntity,ddb_agb_entities_EntityDoor)) {
+						continue;
+					}
+					var door = currentPuzzleEntity;
+					door.reset(door.x,door.y);
+					if(e.properties.keys.get("IsOpen") != null && e.properties.keys.get("IsOpen") == "true") {
+						door.interact();
+					}
+					currentPuzzleEntity = iteratorPuzzles.next();
+				}
+				break;
+			case "simpleGuard":
+				if(currentGuard != null) {
+					currentGuard.reset(x,y);
+					currentGuard = iteratorGuards.next();
+				}
+				break;
+			}
+			if(e.properties.keys.get("EventWatch") != null) {
+				ddb_agb_event_EventBus.getBus().resetEvent(e.properties.keys.get("EventWatch"));
 			}
 		}
 	}
@@ -5332,41 +5386,49 @@ ddb_agb_LevelData.prototype = {
 		_mWalls.loadMapFromArray((js_Boot.__cast(map.getLayer("MainTiles") , flixel_addons_editors_tiled_TiledTileLayer)).get_tileArray(),map.width,map.height,tilePath,map.tileWidth,map.tileHeight,flixel_tile_FlxTilemapAutoTiling.OFF,1,1,3);
 		_mWalls.setTileProperties(2,0);
 		_mWalls.setTileProperties(3,4369);
-		_mWalls.setTileProperties(4,256);
-		_mWalls.setTileProperties(5,256);
-		_mWalls.setTileProperties(6,256);
-		_mWalls.setTileProperties(7,256);
-		_mWalls.setTileProperties(8,256);
+		_mWalls.setTileProperties(4,256,null,null,5);
+		_mWalls.setTileProperties(9,4369,$bind(this,this.handleSpikes),ddb_agb_entities_Player,4);
 		return _mWalls;
+	}
+	,handleSpikes: function(tile,player) {
+		player.kill();
 	}
 	,placeEntity: function(entityType,entityData,props) {
 		var x = Std.parseInt(entityData.get("x"));
 		var y = Std.parseInt(entityData.get("y"));
-		if(entityType == "playerspawn") {
+		var entity = null;
+		switch(entityType) {
+		case "door":
+			entity = new ddb_agb_entities_EntityDoor(x,y);
+			if(props.keys.get("IsOpen") != null && props.keys.get("IsOpen") == "true") {
+				entity.interact();
+			}
+			this.puzzleEntities.add(entity);
+			break;
+		case "lever":
+			entity = new ddb_agb_entities_EntityLever(x,y);
+			this.puzzleEntities.add(entity);
+			break;
+		case "playerspawn":
 			this.playerSpawnPos.set_x(x);
 			this.playerSpawnPos.set_y(y);
-		} else if(entityType == "simpleGuard") {
-			var guard = new ddb_agb_entities_GuardSimple(x,y);
-			var tmp;
-			if(props.keys.get("FollowPath") != null) {
-				var this1 = this._pathList;
-				var key = props.keys.get("FollowPath");
-				var _this = this1;
-				if(__map_reserved[key] != null) {
-					tmp = _this.existsReserved(key);
-				} else {
-					tmp = _this.h.hasOwnProperty(key);
-				}
-			} else {
-				tmp = false;
+			break;
+		case "simpleGuard":
+			entity = new ddb_agb_entities_GuardSimple(x,y);
+			if(props.keys.get("FollowPath") != null && this._pathList.exists(props.keys.get("FollowPath"))) {
+				entity.set_path(this._pathList.get(props.keys.get("FollowPath")));
 			}
-			if(tmp) {
-				var this2 = this._pathList;
-				var key1 = props.keys.get("FollowPath");
-				var _this1 = this2;
-				guard.set_path(__map_reserved[key1] != null ? _this1.getReserved(key1) : _this1.h[key1]);
+			this.grpSimpleGuards.add(entity);
+			break;
+		}
+		if(entity != null && props.keys.get("EventTrigger") != null) {
+			if(props.keys.get("EventType") == null) {
+				throw new js__$Boot_HaxeError("Missing event type parameter");
 			}
-			this.grpSimpleGuards.add(guard);
+			entity.addTrigger(ddb_agb_event_EventTypeHelper.toType(props.keys.get("EventType")),props.keys.get("EventTrigger"));
+		}
+		if(entity != null && props.keys.get("EventWatch") != null) {
+			entity.handleEvent(props.keys.get("EventWatch"));
 		}
 	}
 	,placeTransition: function(name,type,xmlData,props) {
@@ -5378,16 +5440,27 @@ ddb_agb_LevelData.prototype = {
 			var targetLevel = props.keys.get("TargetLevel");
 			var targetTrans = props.keys.get("TargetTransition");
 			var transition = new ddb_agb_entities_TransitionDetector(x,y,width,height);
-			var idx = this.grpTransitions.length;
 			transition.setTarget(targetLevel,targetTrans);
-			this.grpTransitions.insert(idx,transition);
-			var _this = this._transition2idx;
+			this.grpTransitions.add(transition);
+			var _this = this.transitionMap;
 			if(__map_reserved[name] != null) {
-				_this.setReserved(name,idx);
+				_this.setReserved(name,transition);
 			} else {
-				_this.h[name] = idx;
+				_this.h[name] = transition;
 			}
 		}
+	}
+	,placeTrigger: function(name,type,xmlData,props) {
+		var x = Math.floor(parseFloat(xmlData.get("x")));
+		var y = Math.floor(Std.parseInt(xmlData.get("y")));
+		var width = Math.ceil(Std.parseInt(xmlData.get("width")));
+		var height = Math.ceil(Std.parseInt(xmlData.get("height")));
+		var entity = new ddb_agb_event_EventObject(x,y);
+		entity.setSize(width,height);
+		entity.addTrigger(ddb_agb_event_EventTypeHelper.toType(props.keys.get("EventType")),props.keys.get("EventName"));
+		entity.makeGraphic(width,height,0);
+		ddb_agb_event_EventBus.getBus().setEventTrigger(props.keys.get("EventName"),ddb_agb_event_EventTriggerType.ONESHOT);
+		this.grpTriggers.add(entity);
 	}
 	,__class__: ddb_agb_LevelData
 };
@@ -6147,6 +6220,13 @@ ddb_agb_MenuState.prototype = $extend(flixel_FlxState.prototype,{
 	}
 	,__class__: ddb_agb_MenuState
 });
+var ddb_agb_event_EventHandler = function() { };
+$hxClasses["ddb.agb.event.EventHandler"] = ddb_agb_event_EventHandler;
+ddb_agb_event_EventHandler.__name__ = ["ddb","agb","event","EventHandler"];
+ddb_agb_event_EventHandler.prototype = {
+	onEventFired: null
+	,__class__: ddb_agb_event_EventHandler
+};
 var ddb_agb_PlayState = function(levelName) {
 	flixel_FlxState.call(this);
 	this._selectedLevel = levelName;
@@ -6154,6 +6234,7 @@ var ddb_agb_PlayState = function(levelName) {
 };
 $hxClasses["ddb.agb.PlayState"] = ddb_agb_PlayState;
 ddb_agb_PlayState.__name__ = ["ddb","agb","PlayState"];
+ddb_agb_PlayState.__interfaces__ = [ddb_agb_event_EventHandler];
 ddb_agb_PlayState.getInstance = function() {
 	return ddb_agb_PlayState.instance;
 };
@@ -6190,37 +6271,54 @@ ddb_agb_PlayState.prototype = $extend(flixel_FlxState.prototype,{
 			_this1.h["Climbing"] = value1;
 		}
 		var this3 = this._loadedLevels;
-		var value2 = new ddb_agb_LevelData("assets/data/C01L01R02_Going.tmx");
+		var value2 = new ddb_agb_LevelData("assets/data/C01_01_02_FlipFlop.tmx");
 		var _this2 = this3;
-		if(__map_reserved["Going"] != null) {
-			_this2.setReserved("Going",value2);
+		if(__map_reserved["FlipFlop"] != null) {
+			_this2.setReserved("FlipFlop",value2);
 		} else {
-			_this2.h["Going"] = value2;
+			_this2.h["FlipFlop"] = value2;
 		}
+		var this4 = this._loadedLevels;
+		var value3 = new ddb_agb_LevelData("assets/data/C01L01R02_Going.tmx");
+		var _this3 = this4;
+		if(__map_reserved["Going"] != null) {
+			_this3.setReserved("Going",value3);
+		} else {
+			_this3.h["Going"] = value3;
+		}
+		var this5 = this._loadedLevels;
+		var value4 = new ddb_agb_LevelData("assets/data/C01_01_03_Final.tmx");
+		var _this4 = this5;
+		if(__map_reserved["Final"] != null) {
+			_this4.setReserved("Final",value4);
+		} else {
+			_this4.h["Final"] = value4;
+		}
+		ddb_agb_event_EventBus.getBus().addHandler("EnterNextChapterB",this);
 		var key = this._selectedLevel;
-		var _this3 = this._loadedLevels;
-		this._currentLevel = __map_reserved[key] != null ? _this3.getReserved(key) : _this3.h[key];
+		var _this5 = this._loadedLevels;
+		this._currentLevel = __map_reserved[key] != null ? _this5.getReserved(key) : _this5.h[key];
 		if(this._currentLevel == null) {
 			return;
 		}
-		this._currentLevel.loadLevelState(this);
 		this._player = new ddb_agb_entities_Player();
 		this._player.setPosition(this._currentLevel.playerSpawnPos.x,this._currentLevel.playerSpawnPos.y);
 		this._player.setCurrentLevel(this._currentLevel);
-		var _this4 = flixel_FlxG.worldBounds;
-		_this4.x = 0;
-		_this4.y = 0;
-		_this4.width = this._currentLevel.map.fullWidth;
-		_this4.height = this._currentLevel.map.fullHeight;
+		var _this6 = flixel_FlxG.worldBounds;
+		_this6.x = 0;
+		_this6.y = 0;
+		_this6.width = this._currentLevel.map.fullWidth;
+		_this6.height = this._currentLevel.map.fullHeight;
 		this.add(this._player);
 		this.add(this._player.punchBox);
+		this._currentLevel.loadLevelState(this);
 		this.add(this._player.cooldownBar);
 		flixel_FlxG.camera.follow(this._player,flixel_FlxCameraFollowStyle.PLATFORMER,0.75);
-		var _this5 = flixel_FlxG.sound;
+		var _this7 = flixel_FlxG.sound;
 		if(openfl_utils_Assets.exists("assets/music/aloe.ogg","SOUND") || openfl_utils_Assets.exists("assets/music/aloe.ogg","MUSIC")) {
 			openfl_utils_Assets.getSound("assets/music/aloe.ogg",true);
 		} else {
-			var _this6 = flixel_FlxG.log;
+			var _this8 = flixel_FlxG.log;
 		}
 		flixel_FlxG.sound.playMusic("assets/music/aloe.ogg");
 		if(flixel_FlxG.html5.onMobile) {
@@ -6268,18 +6366,30 @@ ddb_agb_PlayState.prototype = $extend(flixel_FlxState.prototype,{
 		doReset = flixel_FlxG.keys.checkKeyArrayState([71],2);
 		if((doReset || !this._player.exists) && this._currentLevel != null) {
 			flixel_tweens_FlxTween.globalManager.completeAll();
+			flixel_tweens_FlxTween.globalManager.clear();
 			this._currentLevel.resetLevel();
 			this._player.reset(this._currentLevel.playerSpawnPos.x,this._currentLevel.playerSpawnPos.y);
 		}
 		flixel_FlxG.overlap(this._player,this._currentLevel.currentTiles,null,flixel_FlxObject.separate);
+		flixel_FlxG.overlap(this._player,this._currentLevel.puzzleEntities,null,flixel_FlxObject.separate);
 		flixel_FlxG.overlap(this._currentLevel.grpSimpleGuards,this._currentLevel.currentTiles,null,flixel_FlxObject.separate);
+		flixel_FlxG.overlap(this._currentLevel.grpSimpleGuards,this._currentLevel.puzzleEntities,null,flixel_FlxObject.separate);
 		flixel_FlxG.overlap(this._player,this._currentLevel.grpTransitions,$bind(this,this.onWarpEnter));
+		flixel_FlxG.overlap(this._player,this._currentLevel.grpTriggers,function(plyr,trigger) {
+			trigger.onOverlap(plyr);
+		});
 		if(this._player.isPunching) {
 			flixel_FlxG.overlap(this._player.punchBox,this._currentLevel.grpSimpleGuards,($_=this._player,$bind($_,$_.punch)));
+			flixel_FlxG.overlap(this._player.punchBox,this._currentLevel.puzzleEntities,$bind(this,this.onPlayerInteract));
 		}
-		flixel_FlxG.overlap(this._player,this._currentLevel.grpSimpleGuards,$bind(this,this.onGuardCollidePlayer),function(plyr,guard) {
-			return guard.willChase;
+		flixel_FlxG.overlap(this._player,this._currentLevel.grpSimpleGuards,$bind(this,this.onGuardCollidePlayer),function(plyr1,guard) {
+			if(guard.willChase) {
+				return guard.alive;
+			} else {
+				return false;
+			}
 		});
+		this._currentLevel.isLoaded = true;
 	}
 	,onWarpEnter: function(plyr,trans) {
 		var key = trans.targetLevel;
@@ -6306,6 +6416,11 @@ ddb_agb_PlayState.prototype = $extend(flixel_FlxState.prototype,{
 	}
 	,onGuardCollidePlayer: function(plyr,guard) {
 		plyr.kill();
+	}
+	,onPlayerInteract: function(box,entity) {
+		entity.onInteract(this._player);
+	}
+	,onEventFired: function(id,type) {
 	}
 	,__class__: ddb_agb_PlayState
 });
@@ -8457,6 +8572,196 @@ flixel_FlxSprite.prototype = $extend(flixel_FlxObject.prototype,{
 	,__class__: flixel_FlxSprite
 	,__properties__: $extend(flixel_FlxObject.prototype.__properties__,{set_clipRect:"set_clipRect",set_color:"set_color",set_blend:"set_blend",set_flipY:"set_flipY",set_flipX:"set_flipX",set_facing:"set_facing",set_alpha:"set_alpha",set_graphic:"set_graphic",set_frames:"set_frames",set_frame:"set_frame",set_pixels:"set_pixels",get_pixels:"get_pixels",set_antialiasing:"set_antialiasing",set_useFramePixels:"set_useFramePixels"})
 });
+var ddb_agb_event_EventObject = function(x,y) {
+	if(y == null) {
+		y = 0;
+	}
+	if(x == null) {
+		x = 0;
+	}
+	this.didOverlapLast = false;
+	this.isOverlapping = false;
+	this.didInteractLast = false;
+	this.isInteracting = false;
+	flixel_FlxSprite.call(this,x,y);
+};
+$hxClasses["ddb.agb.event.EventObject"] = ddb_agb_event_EventObject;
+ddb_agb_event_EventObject.__name__ = ["ddb","agb","event","EventObject"];
+ddb_agb_event_EventObject.__interfaces__ = [ddb_agb_event_EventHandler];
+ddb_agb_event_EventObject.__super__ = flixel_FlxSprite;
+ddb_agb_event_EventObject.prototype = $extend(flixel_FlxSprite.prototype,{
+	onEventTriggers: null
+	,isInteracting: null
+	,didInteractLast: null
+	,isOverlapping: null
+	,didOverlapLast: null
+	,addTrigger: function(type,id) {
+		if(this.onEventTriggers == null) {
+			this.onEventTriggers = new haxe_ds_EnumValueMap();
+		}
+		if(!this.onEventTriggers.exists(type)) {
+			this.onEventTriggers.set(type,[]);
+		}
+		this.onEventTriggers.get(type).push(id);
+		ddb_agb_event_EventBus.getBus().addEvent(id);
+	}
+	,doesHandleTrigger: function(type) {
+		return this.onEventTriggers.exists(type);
+	}
+	,handleEvent: function(event) {
+		ddb_agb_event_EventBus.getBus().addHandler(event,this);
+	}
+	,update: function(elapsed) {
+		flixel_FlxSprite.prototype.update.call(this,elapsed);
+		if(!this.didInteractLast) {
+			this.isInteracting = false;
+			this.didInteractLast = false;
+		}
+		this.didInteractLast = false;
+		if(!this.didOverlapLast) {
+			this.isOverlapping = false;
+			this.didOverlapLast = false;
+		}
+		this.didOverlapLast = false;
+	}
+	,onEventFired: function(id,evtType) {
+	}
+	,onOverlap: function(player) {
+		if(this.onEventTriggers == null) {
+			return;
+		}
+		if(!this.isOverlapping) {
+			var _g = 0;
+			var _g1 = this.onEventTriggers.get(ddb_agb_event_EventType.OnOverlap);
+			while(_g < _g1.length) {
+				var event = _g1[_g];
+				++_g;
+				ddb_agb_event_EventBus.getBus().fireEvent(event,ddb_agb_event_EventType.OnOverlap);
+			}
+			var _this = flixel_FlxG.log;
+			this.isOverlapping = true;
+		}
+		this.didOverlapLast = true;
+	}
+	,onInteract: function(player) {
+		if(this.onEventTriggers == null) {
+			return;
+		}
+		if(!this.isInteracting) {
+			var _g = 0;
+			var _g1 = this.onEventTriggers.get(ddb_agb_event_EventType.OnInteract);
+			while(_g < _g1.length) {
+				var event = _g1[_g];
+				++_g;
+				ddb_agb_event_EventBus.getBus().fireEvent(event,ddb_agb_event_EventType.OnInteract);
+			}
+			this.isInteracting = true;
+		}
+		this.didInteractLast = true;
+	}
+	,kill: function() {
+		if(this.onEventTriggers != null) {
+			var _g = 0;
+			var _g1 = this.onEventTriggers.get(ddb_agb_event_EventType.OnDeath);
+			while(_g < _g1.length) {
+				var event = _g1[_g];
+				++_g;
+				ddb_agb_event_EventBus.getBus().fireEvent(event,ddb_agb_event_EventType.OnDeath);
+			}
+		}
+		flixel_FlxSprite.prototype.kill.call(this);
+	}
+	,__class__: ddb_agb_event_EventObject
+});
+var ddb_agb_entities_EntityDoor = function(x,y) {
+	if(y == null) {
+		y = 0;
+	}
+	if(x == null) {
+		x = 0;
+	}
+	this.logged = false;
+	ddb_agb_event_EventObject.call(this,x + 2,y);
+	this.loadGraphic("assets/images/puzzleAtlas.png",true,16,64);
+	this.set_width(12);
+	this.offset.set(2,0);
+	this.animation.add("closed",[0],30,false);
+	this.animation.add("open",[1],30,false);
+	this.set_immovable(true);
+	this.isOpen = false;
+};
+$hxClasses["ddb.agb.entities.EntityDoor"] = ddb_agb_entities_EntityDoor;
+ddb_agb_entities_EntityDoor.__name__ = ["ddb","agb","entities","EntityDoor"];
+ddb_agb_entities_EntityDoor.__super__ = ddb_agb_event_EventObject;
+ddb_agb_entities_EntityDoor.prototype = $extend(ddb_agb_event_EventObject.prototype,{
+	isOpen: null
+	,logged: null
+	,tmr: null
+	,update: function(elapsed) {
+		if(this.isOpen) {
+			this.animation.play("open");
+		} else {
+			this.animation.play("closed");
+		}
+		this.set_solid(!this.isOpen);
+		ddb_agb_event_EventObject.prototype.update.call(this,elapsed);
+	}
+	,draw: function() {
+		ddb_agb_event_EventObject.prototype.draw.call(this);
+	}
+	,onEventFired: function(id,evtType) {
+		this.interact();
+	}
+	,revive: function() {
+		ddb_agb_event_EventObject.prototype.revive.call(this);
+		this.isOpen = false;
+	}
+	,interact: function() {
+		this.isOpen = !this.isOpen;
+	}
+	,__class__: ddb_agb_entities_EntityDoor
+});
+var ddb_agb_entities_EntityLever = function(x,y) {
+	if(y == null) {
+		y = 0;
+	}
+	if(x == null) {
+		x = 0;
+	}
+	this.isOn = false;
+	ddb_agb_event_EventObject.call(this,x,y);
+	this.loadGraphic("assets/images/puzzleAtlas.png",true,16,16);
+	this.animation.add("off",[4,2],25,false);
+	this.animation.add("on",[4,3],25,false);
+	this.set_immovable(true);
+	this.set_allowCollisions(4096);
+	this.ID = ddb_agb_entities_EntityLever.nextLeverID;
+	this.addTrigger(ddb_agb_event_EventType.OnInteract,"FlipLever" + ddb_agb_entities_EntityLever.nextLeverID);
+	this.handleEvent("FlipLever" + ddb_agb_entities_EntityLever.nextLeverID++);
+};
+$hxClasses["ddb.agb.entities.EntityLever"] = ddb_agb_entities_EntityLever;
+ddb_agb_entities_EntityLever.__name__ = ["ddb","agb","entities","EntityLever"];
+ddb_agb_entities_EntityLever.__super__ = ddb_agb_event_EventObject;
+ddb_agb_entities_EntityLever.prototype = $extend(ddb_agb_event_EventObject.prototype,{
+	isOn: null
+	,update: function(elapsed) {
+		ddb_agb_event_EventObject.prototype.update.call(this,elapsed);
+		if(this.isOn && this.animation.get_name() != "on") {
+			this.animation.play("on");
+		} else if(!this.isOn && this.animation.get_name() != "off") {
+			this.animation.play("off");
+		}
+	}
+	,onEventFired: function(id,evtType) {
+		if(evtType == ddb_agb_event_EventType.OnInteract && id == "FlipLever" + this.ID) {
+			this.interact();
+		}
+	}
+	,interact: function() {
+		this.isOn = !this.isOn;
+	}
+	,__class__: ddb_agb_entities_EntityLever
+});
 var ddb_agb_entities_GuardSimple = function(X,Y) {
 	if(Y == null) {
 		Y = 0;
@@ -8466,45 +8771,44 @@ var ddb_agb_entities_GuardSimple = function(X,Y) {
 	}
 	this.deltaX = 0;
 	this.willChase = false;
-	this._testu = false;
+	this._isFollowingPath = false;
 	this.isAggro = false;
 	this._canBeHurt = true;
 	this.gravity = 800;
 	this.speed = 90;
-	flixel_FlxSprite.call(this,X,Y);
+	ddb_agb_event_EventObject.call(this,X,Y);
 	this._damageTimer = new flixel_util_FlxTimer();
 	this._aggroTimer = new flixel_util_FlxTimer();
 	this._chaseTimer = new flixel_util_FlxTimer();
 	this.loadGraphic("assets/images/entityAtlas.png",true,32,64);
 	this._facingFlip.set(1,{ x : true, y : false});
 	this._facingFlip.set(16,{ x : false, y : false});
-	this.animation.add("gs-idle",[0],null,false);
-	this.animation.add("gs-aggro",[4],null,false);
+	this.animation.add("gs-idle",[0],30,false);
+	this.animation.add("gs-aggro",[4],30,false);
 	this.maxVelocity.set(this.speed,this.gravity * 4);
 	this.acceleration.set_y(this.gravity);
 	this.drag.set_x(this.speed * 4);
 	this.health = 3;
-	var _this = flixel_FlxG.watch;
 };
 $hxClasses["ddb.agb.entities.GuardSimple"] = ddb_agb_entities_GuardSimple;
 ddb_agb_entities_GuardSimple.__name__ = ["ddb","agb","entities","GuardSimple"];
-ddb_agb_entities_GuardSimple.__super__ = flixel_FlxSprite;
-ddb_agb_entities_GuardSimple.prototype = $extend(flixel_FlxSprite.prototype,{
+ddb_agb_entities_GuardSimple.__super__ = ddb_agb_event_EventObject;
+ddb_agb_entities_GuardSimple.prototype = $extend(ddb_agb_event_EventObject.prototype,{
 	speed: null
 	,gravity: null
 	,_canBeHurt: null
 	,_damageTimer: null
 	,isAggro: null
 	,_aggroTimer: null
-	,_testu: null
+	,_isFollowingPath: null
 	,willChase: null
 	,_chaseTimer: null
 	,deltaX: null
 	,update: function(elapsed) {
 		this.set_immovable(false);
-		if(this.path != null && !this._testu && !this.isAggro && this.alive) {
+		if(this.path != null && !this._isFollowingPath && !this.isAggro && this.alive) {
 			this.path.start(null,this.speed,65552,false,true);
-			this._testu = true;
+			this._isFollowingPath = true;
 		}
 		if(this.path != null && this.path.active) {
 			var node = this.path.get_nodes()[this.path.nodeIndex];
@@ -8522,7 +8826,8 @@ ddb_agb_entities_GuardSimple.prototype = $extend(flixel_FlxSprite.prototype,{
 				}
 			}
 		}
-		flixel_FlxSprite.prototype.update.call(this,elapsed);
+		ddb_agb_event_EventObject.prototype.update.call(this,elapsed);
+		this.acceleration.set_x(0);
 	}
 	,draw: function() {
 		if(this.velocity.x != 0) {
@@ -8537,7 +8842,7 @@ ddb_agb_entities_GuardSimple.prototype = $extend(flixel_FlxSprite.prototype,{
 		} else {
 			this.animation.play("gs-idle");
 		}
-		flixel_FlxSprite.prototype.draw.call(this);
+		ddb_agb_event_EventObject.prototype.draw.call(this);
 	}
 	,hurt: function(damage) {
 		var _gthis = this;
@@ -8552,23 +8857,36 @@ ddb_agb_entities_GuardSimple.prototype = $extend(flixel_FlxSprite.prototype,{
 		if(!this._aggroTimer.active) {
 			this._aggroTimer.start(5,function(_1) {
 				_gthis.isAggro = false;
-				_gthis._testu = false;
+				_gthis._isFollowingPath = false;
 				_gthis.willChase = false;
 			},1);
 		} else {
 			this._aggroTimer.reset(5);
 		}
 		if(!this._chaseTimer.active) {
-			this._chaseTimer.start(1.25,function(_2) {
+			this._chaseTimer.start(1,function(_2) {
 				_gthis.willChase = _gthis.alive;
 			},1);
 		}
-		this.path.cancel();
+		if(this.path != null) {
+			this.path.cancel();
+		}
 		this.acceleration.set_x(0);
-		flixel_FlxSprite.prototype.hurt.call(this,damage);
+		ddb_agb_event_EventObject.prototype.hurt.call(this,damage);
+	}
+	,revive: function() {
+		ddb_agb_event_EventObject.prototype.revive.call(this);
+		this.health = 3;
+		this.isAggro = false;
+		this.willChase = false;
+		this._isFollowingPath = false;
+		this._aggroTimer.cancel();
+		this._chaseTimer.cancel();
+		this.set_angle(0);
 	}
 	,kill: function() {
-		this.set_alive(false);
+		ddb_agb_event_EventObject.prototype.kill.call(this);
+		this.set_exists(true);
 		flixel_tweens_FlxTween.angle(this,0,90,1.5,{ ease : flixel_tweens_FlxEase.bounceOut, onComplete : $bind(this,this.doKill)});
 	}
 	,doKill: function(_) {
@@ -8585,6 +8903,7 @@ var ddb_agb_entities_Player = function(X,Y) {
 	}
 	this.canPunchAgain = true;
 	this.isPunching = false;
+	this.punchCooldownLimit = ddb_agb_entities_Player.COOLDOWN_NORMAL;
 	this.punchCooldown = 0;
 	this._isIdle = false;
 	this._buttonIdle = false;
@@ -8604,10 +8923,11 @@ var ddb_agb_entities_Player = function(X,Y) {
 	this.offset.set(8,0);
 	this._facingFlip.set(1,{ x : false, y : false});
 	this._facingFlip.set(16,{ x : true, y : false});
-	this.animation.add("passive-still",[0],null,false);
+	this.animation.add("passive-still",[16,17,16],1,false);
+	this.animation.add("passive-walk",[9,8,9,10],10,true);
 	this.animation.add("passive-punch",[6,7],15,false);
 	this.animation.add("idle",[1,2,3],25,false);
-	this.animation.add("idle-exit",[2,3],25,false);
+	this.animation.add("idle-exit",[17,16],5,false);
 	this.maxVelocity.set(ddb_agb_entities_Player.speed,this.gravity);
 	this.acceleration.set_y(this.gravity);
 	this.drag.set_x(ddb_agb_entities_Player.speed * 10);
@@ -8618,11 +8938,12 @@ var ddb_agb_entities_Player = function(X,Y) {
 	this.punchBox.set_active(false);
 	this.punchBox.set_visible(false);
 	this.punchTimer = new flixel_util_FlxTimer();
-	this.cooldownBar = new flixel_ui_FlxBar(this.x,this.y,null,32,5,this,"punchCooldown",0,ddb_agb_entities_Player.COOLDOWN_MAX);
+	this.cooldownBar = new flixel_ui_FlxBar(this.x,this.y,null,32,5,this,"punchCooldown",0,ddb_agb_entities_Player.COOLDOWN_NORMAL);
 	var clr = -723968;
 	this.cooldownBar.createFilledBar(clr - 10724096,clr,false);
 	this.cooldownBar.set_active(false);
 	this.cooldownBar.set_visible(false);
+	this.set_facing(16);
 };
 $hxClasses["ddb.agb.entities.Player"] = ddb_agb_entities_Player;
 ddb_agb_entities_Player.__name__ = ["ddb","agb","entities","Player"];
@@ -8643,6 +8964,7 @@ ddb_agb_entities_Player.prototype = $extend(flixel_FlxSprite.prototype,{
 	,_currentLevel: null
 	,punchTimer: null
 	,punchCooldown: null
+	,punchCooldownLimit: null
 	,punchBox: null
 	,isPunching: null
 	,canPunchAgain: null
@@ -8689,7 +9011,11 @@ ddb_agb_entities_Player.prototype = $extend(flixel_FlxSprite.prototype,{
 			this.acceleration.set_y(this.gravity);
 		}
 		if(!this._isIdle) {
-			this.animation.play("passive-still");
+			if(this.acceleration.x != 0 && this.onGround) {
+				this.animation.play("passive-walk");
+			} else {
+				this.animation.play("passive-still");
+			}
 		} else {
 			this.acceleration.set_x(0);
 			this.velocity.set_y(0);
@@ -8708,8 +9034,6 @@ ddb_agb_entities_Player.prototype = $extend(flixel_FlxSprite.prototype,{
 			this.punchTimer.start(0.25,function(_) {
 				_gthis.isPunching = false;
 			},1);
-			this.cooldownBar.set_active(true);
-			this.cooldownBar.set_visible(true);
 		}
 		if(this.isPunching) {
 			this.acceleration.set_x(0);
@@ -8728,7 +9052,7 @@ ddb_agb_entities_Player.prototype = $extend(flixel_FlxSprite.prototype,{
 		if(!this.canPunchAgain) {
 			this.cooldownBar.setPosition(this.x - this.offset.x,this.y - this.cooldownBar.get_height());
 			this.punchCooldown += elapsed;
-			if(this.punchCooldown >= ddb_agb_entities_Player.COOLDOWN_MAX) {
+			if(this.punchCooldown >= this.punchCooldownLimit) {
 				this.resetPunch();
 			}
 		}
@@ -8767,6 +9091,10 @@ ddb_agb_entities_Player.prototype = $extend(flixel_FlxSprite.prototype,{
 		guard.set_immovable(false);
 		guard.velocity.set_x(100 * (this.facing == 1 ? -1 : 1) * 4);
 		guard.velocity.set_y(-100);
+		this.punchCooldownLimit = ddb_agb_entities_Player.COOLDOWN_MAX;
+		this.cooldownBar.setRange(0,ddb_agb_entities_Player.COOLDOWN_MAX);
+		this.cooldownBar.set_active(true);
+		this.cooldownBar.set_visible(true);
 	}
 	,resetPunch: function() {
 		this.punchCooldown = 0;
@@ -8774,6 +9102,8 @@ ddb_agb_entities_Player.prototype = $extend(flixel_FlxSprite.prototype,{
 		this.isPunching = false;
 		this.cooldownBar.set_visible(false);
 		this.cooldownBar.set_active(false);
+		this.punchCooldownLimit = ddb_agb_entities_Player.COOLDOWN_NORMAL;
+		this.cooldownBar.setRange(0,ddb_agb_entities_Player.COOLDOWN_NORMAL);
 	}
 	,__class__: ddb_agb_entities_Player
 });
@@ -8807,6 +9137,143 @@ ddb_agb_entities_TransitionDetector.prototype = $extend(flixel_FlxObject.prototy
 	}
 	,__class__: ddb_agb_entities_TransitionDetector
 });
+var ddb_agb_event_EventType = $hxClasses["ddb.agb.event.EventType"] = { __ename__ : ["ddb","agb","event","EventType"], __constructs__ : ["OnDeath","OnOverlap","OnInteract"] };
+ddb_agb_event_EventType.OnDeath = ["OnDeath",0];
+ddb_agb_event_EventType.OnDeath.toString = $estr;
+ddb_agb_event_EventType.OnDeath.__enum__ = ddb_agb_event_EventType;
+ddb_agb_event_EventType.OnOverlap = ["OnOverlap",1];
+ddb_agb_event_EventType.OnOverlap.toString = $estr;
+ddb_agb_event_EventType.OnOverlap.__enum__ = ddb_agb_event_EventType;
+ddb_agb_event_EventType.OnInteract = ["OnInteract",2];
+ddb_agb_event_EventType.OnInteract.toString = $estr;
+ddb_agb_event_EventType.OnInteract.__enum__ = ddb_agb_event_EventType;
+var ddb_agb_event_EventTriggerType = $hxClasses["ddb.agb.event.EventTriggerType"] = { __ename__ : ["ddb","agb","event","EventTriggerType"], __constructs__ : ["ONESHOT","REPEAT"] };
+ddb_agb_event_EventTriggerType.ONESHOT = ["ONESHOT",0];
+ddb_agb_event_EventTriggerType.ONESHOT.toString = $estr;
+ddb_agb_event_EventTriggerType.ONESHOT.__enum__ = ddb_agb_event_EventTriggerType;
+ddb_agb_event_EventTriggerType.REPEAT = ["REPEAT",1];
+ddb_agb_event_EventTriggerType.REPEAT.toString = $estr;
+ddb_agb_event_EventTriggerType.REPEAT.__enum__ = ddb_agb_event_EventTriggerType;
+var ddb_agb_event_EventTypeHelper = function() { };
+$hxClasses["ddb.agb.event.EventTypeHelper"] = ddb_agb_event_EventTypeHelper;
+ddb_agb_event_EventTypeHelper.__name__ = ["ddb","agb","event","EventTypeHelper"];
+ddb_agb_event_EventTypeHelper.toType = function(key) {
+	switch(key) {
+	case "OnDeath":
+		return ddb_agb_event_EventType.OnDeath;
+	case "OnInteract":
+		return ddb_agb_event_EventType.OnInteract;
+	case "OnOverlap":
+		return ddb_agb_event_EventType.OnOverlap;
+	default:
+		throw new js__$Boot_HaxeError("Invalid type $key");
+	}
+};
+var ddb_agb_event_EventBus = function() {
+	this.handlers = new haxe_ds_StringMap();
+	this.triggerTypes = new haxe_ds_StringMap();
+	this.eventsFired = new haxe_ds_StringMap();
+};
+$hxClasses["ddb.agb.event.EventBus"] = ddb_agb_event_EventBus;
+ddb_agb_event_EventBus.__name__ = ["ddb","agb","event","EventBus"];
+ddb_agb_event_EventBus.getBus = function() {
+	return ddb_agb_event_EventBus.instance;
+};
+ddb_agb_event_EventBus.prototype = {
+	handlers: null
+	,triggerTypes: null
+	,eventsFired: null
+	,addEvent: function(id) {
+		var _this = this.handlers;
+		if(__map_reserved[id] != null ? _this.existsReserved(id) : _this.h.hasOwnProperty(id)) {
+			var _this1 = flixel_FlxG.log;
+			return;
+		}
+		var this1 = this.handlers;
+		var value = [];
+		var _this2 = this1;
+		if(__map_reserved[id] != null) {
+			_this2.setReserved(id,value);
+		} else {
+			_this2.h[id] = value;
+		}
+		var _this3 = this.triggerTypes;
+		var value1 = ddb_agb_event_EventTriggerType.REPEAT;
+		if(__map_reserved[id] != null) {
+			_this3.setReserved(id,value1);
+		} else {
+			_this3.h[id] = value1;
+		}
+		var _this4 = this.eventsFired;
+		if(__map_reserved[id] != null) {
+			_this4.setReserved(id,false);
+		} else {
+			_this4.h[id] = false;
+		}
+	}
+	,addHandler: function(id,handler) {
+		var _this = this.handlers;
+		if(!(__map_reserved[id] != null ? _this.existsReserved(id) : _this.h.hasOwnProperty(id))) {
+			var _this1 = flixel_FlxG.log;
+			this.addEvent(id);
+		}
+		var _this2 = this.handlers;
+		(__map_reserved[id] != null ? _this2.getReserved(id) : _this2.h[id]).push(handler);
+	}
+	,setEventTrigger: function(id,type) {
+		var _this = this.triggerTypes;
+		if(__map_reserved[id] != null) {
+			_this.setReserved(id,type);
+		} else {
+			_this.h[id] = type;
+		}
+	}
+	,resetEvent: function(id) {
+		var _this = this.eventsFired;
+		if(__map_reserved[id] != null) {
+			_this.setReserved(id,false);
+		} else {
+			_this.h[id] = false;
+		}
+	}
+	,fireEvent: function(id,type) {
+		var tmp;
+		var _this = this.triggerTypes;
+		if((__map_reserved[id] != null ? _this.getReserved(id) : _this.h[id]) == ddb_agb_event_EventTriggerType.ONESHOT) {
+			var _this1 = this.eventsFired;
+			if(__map_reserved[id] != null) {
+				tmp = _this1.getReserved(id);
+			} else {
+				tmp = _this1.h[id];
+			}
+		} else {
+			tmp = false;
+		}
+		if(tmp) {
+			return;
+		}
+		var _this2 = this.handlers;
+		if(!(__map_reserved[id] != null ? _this2.existsReserved(id) : _this2.h.hasOwnProperty(id))) {
+			var _this3 = flixel_FlxG.log;
+			return;
+		}
+		var _this4 = this.handlers;
+		var eventHandlers = __map_reserved[id] != null ? _this4.getReserved(id) : _this4.h[id];
+		var _g = 0;
+		while(_g < eventHandlers.length) {
+			var handler = eventHandlers[_g];
+			++_g;
+			handler.onEventFired(id,type);
+		}
+		var _this5 = this.eventsFired;
+		if(__map_reserved[id] != null) {
+			_this5.setReserved(id,true);
+		} else {
+			_this5.h[id] = true;
+		}
+	}
+	,__class__: ddb_agb_event_EventBus
+};
 var flixel_group_FlxTypedSpriteGroup = function(X,Y,MaxSize) {
 	if(MaxSize == null) {
 		MaxSize = 0;
@@ -106755,13 +107222,18 @@ openfl_display_DisplayObject.__tempStack = new lime_utils_ObjectPool(function() 
 });
 AssetPaths.sound_placeholder__txt = "assets/sounds/sound_placeholder.txt";
 AssetPaths.C01L01R00_Allo__tmx = "assets/data/C01L01R00_Allo.tmx";
+AssetPaths.C01_01_03_Final__tmx = "assets/data/C01_01_03_Final.tmx";
 AssetPaths.C01L01R01_Climbing__tmx = "assets/data/C01L01R01_Climbing.tmx";
 AssetPaths.Tileset0__tsx = "assets/data/Tileset0.tsx";
+AssetPaths.C01_01_02_FlipFlop__tmx = "assets/data/C01_01_02_FlipFlop.tmx";
 AssetPaths.C01L01R02_Going__tmx = "assets/data/C01L01R02_Going.tmx";
+AssetPaths.C01_01_03_BlipBlock__tmx = "assets/data/C01_01_03_BlipBlock.tmx";
 AssetPaths.playerAtlas__png = "assets/images/playerAtlas.png";
 AssetPaths.tileatlas0__png = "assets/images/tileatlas0.png";
 AssetPaths.moveButtons__xcf = "assets/images/moveButtons.xcf";
 AssetPaths.moveButtons__png = "assets/images/moveButtons.png";
+AssetPaths.puzzleAtlas__png = "assets/images/puzzleAtlas.png";
+AssetPaths.puzzleAtlas__xcf = "assets/images/puzzleAtlas.xcf";
 AssetPaths.entityAtlas__xcf = "assets/images/entityAtlas.xcf";
 AssetPaths.icon__xcf = "assets/images/icon.xcf";
 AssetPaths.playerAtlas__xcf = "assets/images/playerAtlas.xcf";
@@ -106817,11 +107289,14 @@ flixel_FlxObject._secondSeparateFlxRect = (function($this) {
 	$r = rect;
 	return $r;
 }(this));
+ddb_agb_entities_EntityLever.nextLeverID = 0;
 ddb_agb_entities_Player._targetHeight = 88.;
 ddb_agb_entities_Player._jumpLength = 0.5;
 ddb_agb_entities_Player._boostHeight = 16;
 ddb_agb_entities_Player.speed = 120;
+ddb_agb_entities_Player.COOLDOWN_NORMAL = 0.25;
 ddb_agb_entities_Player.COOLDOWN_MAX = 2;
+ddb_agb_event_EventBus.instance = new ddb_agb_event_EventBus();
 flixel_math_FlxPoint._pool = new flixel_util_FlxPool_$flixel_$math_$FlxPoint(flixel_math_FlxPoint);
 lime_math_Matrix3.__identity = new lime_math_Matrix3();
 openfl_geom_Matrix.__identity = new openfl_geom_Matrix();
