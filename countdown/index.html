@@ -1,36 +1,69 @@
 <!DOCTYPE html>
-
 <html>
-<head>
-	<title>This many days until...</title>
-	<meta charset="utf-8" name="viewport" content="width=device-width, initial-scale=1">
-	<link rel="stylesheet" type="text/css" href="countdown.css">
-</head>
+	<head profile="http://www.w3.org/2005/10/profile">
+		<meta charset="UTF-8" name="viewport" content="width=device-width, initial-scale=1">
+		<link rel="icon" type="image/png" href="/assets/images/smile.png">
+		<link rel="stylesheet" href="/assets/styles/blueberry.css">
+		<link rel="stylesheet" href="/assets/styles/header.css">
+		<link rel="stylesheet" type="text/css" href="countdown.css">
+        <title>This many days until... - DDB Website</title>
+	</head>
+	<style>
+	</style>
+	<script src="/assets/scripts/jquery.min.js"></script>
+	<script src="/assets/scripts/jquery.blueberry.js"></script>
+	<script src="/assets/scripts/header.js"></script>
+	<script src="countdown.js"></script>
 
-<script src="countdown.js"></script>
-
-<body onload="changeTimerSelect(0);">
-<div class="wrapper">
-	<div class="center-box">
-		<h1>There are...</h1>
-		<div class="focus-box">
-			<p id="days">n<p>
-			<p id="hours">n<p>
-			<p id="minutes">n<p>
-			<p id="seconds">n<p>
-			<p id="millis">n<p>
-		</div> <!-- .focus-box -->
-		
-		<p id="until">Until sometime in the future</p>
-		
-		<div style="text-align: center;">
-			<button id="prev-timer" class="timerbts" onclick="changeTimerSelect(-1)">&lt;</button>
-			<p id="timerCount">Timer</p>
-			<button id="next-timer" class="timerbts" onclick="changeTimerSelect(+1)">&gt;</button>
-		</div>
-	</div> <!-- .center-box -->
+	<script>
+	$(window).on("load", function() {
+		changeTimerSelect(0);
+	});
+	</script>
 	
-	<p id="who">Created by <a href="https://dropdembits.github.io">DropDemBits</a></p>
-</div> <!-- .wrapper -->
-</body>
+	<body>
+		<nav id="mainNav" class="">
+			<li id="main-text" class="left">DDB | Website</li>
+  			<li class="icon"><a href="javascript:void(0)" onclick="iconClick()">☰</a></li>
+  			<ul class="menu">
+    			<li :hover class="left special-hover"><a href="/index.html">Home</a></li>
+    			<li class="left special-hover dropdown">
+      				<a href="javascript:void(0)" onclick="dropdownClick()">Stuff<img id="arrow" src="/assets/images/arrow.png"/></a>
+      				<ul class="dropdown-content">
+						<li><a href="/agb/index.html">AGB</a></li>
+						<li><a href="/k4os/index.html">Kernel4</a></li>
+        				<li><a href="/eleos/index.html">ELEOS</a></li>
+        				<li><a href="/condorfos/index.html">CondorFOS</a></li>
+        				<li><a href="/countdown/index.html">A Special Countdown</a></li>
+      				</ul>
+    			</li>
+    			<li class="left special-hover"><a href="/about.html">About</a></li>
+    			</div>
+  			</ul>
+		</nav>
+
+		<div class="wrapper">
+			<div class="center-box">
+				<h1>There are...</h1>
+				<div class="focus-box">
+					<p id="days">n<p>
+					<p id="hours">n<p>
+					<p id="minutes">n<p>
+					<p id="seconds">n<p>
+					<p id="millis">n<p>
+				</div> <!-- .focus-box -->
+
+				<p id="until">Until sometime in the future</p>
+
+				<div style="text-align: center;">
+					<button id="prev-timer" class="timerbts" onclick="changeTimerSelect(-1)">&lt;</button>
+					<p id="timerCount">Timer</p>
+					<button id="next-timer" class="timerbts" onclick="changeTimerSelect(+1)">&gt;</button>
+				</div>
+			</div> <!-- .center-box -->
+		</div> <!-- .wrapper -->
+		<footer>
+			<p>&copy; DropDemBits 2016-2018</p>
+		</footer>
+	</body>
 </html>

@@ -48,6 +48,7 @@ nav li.left {
   padding: 16px;
   text-decoration: none;
   border-right-style: solid;
+  border-right-width: 3px;
 }
 
 .dropdown {
@@ -99,6 +100,22 @@ nav .icon {
 	height: 1.5em; 
 	width: 1.5em;
 	float: right;
+}
+
+footer {
+  text-align: center;
+  position: relative;
+  clear: both;
+  z-index: 10;
+  height: 2em;
+  padding-top: 1em;
+  margin-top: -2em;
+  background: #7D7F7E;
+}
+
+footer p {
+  color: #3F403F;
+  vertical-align: middle;
 }
 
 @media screen and (max-width: 768px) {
