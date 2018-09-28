@@ -1,33 +1,42 @@
 <!DOCTYPE html>
 <html>
-	<head>
+	<head profile="http://www.w3.org/2005/10/profile">
 		<meta charset="UTF-8" name="viewport" content="width=device-width, initial-scale=1">
-		<link rel="icon" type="image/png" href="../assets/images/smile.png">
-		<link rel="stylesheet" href="../assets/styles/header.css">
-		<link rel="stylesheet" href="../assets/styles/main.css">
-		<link rel="stylesheet" href="../assets/styles/blueberry.css">
-                <title>Some Random Person's Website</title>
+		<link rel="icon" type="image/png" href="/assets/images/smile.png">
+		<link rel="stylesheet" href="/assets/styles/blueberry.css">
+		<link rel="stylesheet" href="/assets/styles/header.css">
+		<link rel="stylesheet" href="/assets/styles/main.css">
+        <title>Some Random Person's Website</title>
 	</head>
 	<style>
 	</style>
-	<script src="../assets/scripts/jquery.min.js"></script>
-	<script src="../assets/scripts/header.js"></script>
+	<script src="/assets/scripts/jquery.min.js"></script>
+	<script src="/assets/scripts/jquery.blueberry.js"></script>
+	<script src="/assets/scripts/header.js"></script>
 
+	<script>
+	$(window).on("load", function() {
+		$('.blueberry').blueberry();
+	});
+	</script>
 	<body>
 		<nav id="mainNav" class="">
-  			<ul>
-    			<li id="main-text" class="left">DDB | Website</li>
-    			<li :hover class="left special-hover"><a href="../index.html">Home</a></li>
+  			<li id="main-text" class="left">DDB | Website</li>
+  			<li class="icon"><a href="javascript:void(0)" onclick="iconClick()">☰</a></li>
+  			<ul class="menu">
+    			<li :hover class="left special-hover"><a href="/index.html">Home</a></li>
     			<li class="left special-hover dropdown">
-      				<a href="javascript:void(0)" onclick="dropdownClick()" style="">Stuff<img id="arrow" src="../assets/images/arrow.png"/></a>
+      				<a href="javascript:void(0)" onclick="dropdownClick()">Stuff<img id="arrow" src="/assets/images/arrow.png"/></a>
       				<ul class="dropdown-content">
-        				<li><a href="../eleos/index.html">ELEOS</a></li>
-        				<li><a href="../condorfos/index.html">CondorFOS</a></li>
-        				<li><a href="../countdown/index.html">A Special Countdown</a></li>
+						<li><a href="/agb/index.html">AGB</a></li>
+						<li><a href="/k4os/index.html">Kernel4</a></li>
+        				<li><a href="/eleos/index.html">ELEOS</a></li>
+        				<li><a href="/condorfos/index.html">CondorFOS</a></li>
+        				<li><a href="/countdown/index.html">A Special Countdown</a></li>
       				</ul>
     			</li>
-    			<li class="left special-hover"><a href="../about.html">About</a></li>
-    			<li class="icon"><a href="javascript:void(0)" onclick="iconClick()" style="">☰</a></li>
+    			<li class="left special-hover"><a href="/about.html">About</a></li>
+    			</div>
   			</ul>
 		</nav>
 		
@@ -63,7 +72,7 @@
 			</div>
 		</div>
 		<footer>
-			<i>(This text has fallen into /dev/null)</i>
+			<p>&copy; DropDemBits 2016-2018</p>
 		</footer>
 	</body>
 </html>

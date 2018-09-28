@@ -1,0 +1,116 @@
+<!DOCTYPE html>
+<html>
+	<head profile="http://www.w3.org/2005/10/profile">
+		<meta charset="UTF-8" name="viewport" content="width=device-width, initial-scale=1">
+		<link rel="icon" type="image/png" href="/assets/images/smile.png">
+		<link rel="stylesheet" href="/assets/styles/blueberry.css">
+		<link rel="stylesheet" href="/assets/styles/header.css">
+		<link rel="stylesheet" href="/assets/styles/main.css">
+        <title>Some Random Person's Website</title>
+	</head>
+	<style>
+	</style>
+	<script src="/assets/scripts/jquery.min.js"></script>
+	<script src="/assets/scripts/jquery.blueberry.js"></script>
+	<script src="/assets/scripts/header.js"></script>
+
+	<script>
+	$(window).on("load", function() {
+		$('.blueberry').blueberry();
+	});
+	</script>
+	<body>
+		<nav id="mainNav" class="">
+  			<li id="main-text" class="left">DDB | Website</li>
+  			<li class="icon"><a href="javascript:void(0)" onclick="iconClick()">☰</a></li>
+  			<ul class="menu">
+    			<li :hover class="left special-hover"><a href="/index.html">Home</a></li>
+    			<li class="left special-hover dropdown">
+      				<a href="javascript:void(0)" onclick="dropdownClick()">Stuff<img id="arrow" src="/assets/images/arrow.png"/></a>
+      				<ul class="dropdown-content">
+						<li><a href="/agb/index.html">AGB</a></li>
+						<li><a href="/k4os/index.html">Kernel4</a></li>
+        				<li><a href="/eleos/index.html">ELEOS</a></li>
+        				<li><a href="/condorfos/index.html">CondorFOS</a></li>
+        				<li><a href="/countdown/index.html">A Special Countdown</a></li>
+      				</ul>
+    			</li>
+    			<li class="left special-hover"><a href="/about.html">About</a></li>
+    			</div>
+  			</ul>
+		</nav>
+		
+		<div id="content">
+		    <div>
+		        <div class="text">
+                    <h1>Kernel4</h1>
+                    <p>Kernel4 is yet another hobbyist kernel</p>
+                    <br/>
+                    <p>Repository: <a href="https://github.com/DropDemBits/kernel4">https://github.com/DropDemBits/kernel4</a></p>
+                    <br/>
+                    <p>Version History:</p>
+                    <h3>0.0</h3>
+                    <ul style="list-style-type:circle">
+                        <li>First Version</li>
+                    </ul>
+                    <h3>0.1</h3>
+                    <ul style="list-style-type:circle">
+                        <li>Added KSHELL command line interface</li>
+                    </ul>
+                    <h3>0.2</h3>
+                    <ul style="list-style-type:circle">
+                        <li>Added termination of tasks</li>
+                    </ul>
+                    <h3>0.3</h3>
+                    <ul style="list-style-type:circle">
+                        <li>Added control of thread states</li>
+                        <li>Added thread sleeping</li>
+                        <li>Do multithreading initialization</li>
+                        <li>Move keycode decoding into seperate threads</li>
+                    </ul>
+                    <h3>0.4</h3>
+                    <ul style="list-style-type:circle">
+                        <li>tty_reshow now uses last draw index to do stuff</li>
+                        <li>Added entry usermode</li>
+                        <li>Added syscalls</li>
+                        <li>Removed IDT IRQ sharing</li>
+                        <li>Added separate address spaces</li>
+                        <li>Rewritten the scheduler</li>
+					</ul>
+					<br/>
+					<p>Upcoming Versions:</p>
+					<h3>0.5</h3>
+					<ul style="list-style-type:circle">
+						<li>Added mutexes and semaphores</li>
+						<li>Added generic timer interface</li>
+						<li>Reorganized headers</li>
+						<li>Added PCI bus enumeration</li>
+						<li>Added basic PATA/PATAPI driver</li>
+						<li><i>Adding PCI IRQ allocation</i></li>
+						<li><i>Adding Kernel Logger</i></li>
+						<li><i>Adding multiple tty support</i></li>
+					</ul>
+                    <p>Planned:</p>
+                    <ul style="list-style-type:circle">
+						<li>IPC</li>
+						<li>Simple AHCI driver</li>
+						<li>SATA/SATAPI PIO interface</li>
+						<li>Improved VFS</li>
+						<li>Usermode Virtual Memory Manager</li>
+						<li>Process forking & exec'ing</li>
+						<li>More supported FSes (eg. ext2/3/4, fat12/16/32, isofs)</li>
+						<li>ACPI Support</li>
+						<li>Common Driver Interface</li>
+						<li>USB Host Controller Drivers</li>
+						<li>USB Driver Interface</li>
+						<li>GUI Framework</li>
+						<li>Port to more architechtures (riscv, arm64, arm, mips)</li>
+                    </ul>
+		        </div>
+		    </div>
+		</div>
+		<footer>
+			<p>&copy; DropDemBits 2016-2018</p>
+		</footer>
+	</body>
+</html>

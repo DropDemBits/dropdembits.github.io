@@ -3,7 +3,7 @@
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
 	<url>
 		<loc>https://dropdembits.github.io/</loc>
-		<lastmod>2017-06-24</lastmod>
+		<lastmod>2018-09-28</lastmod>
 		<changefreq>weekly</changefreq>
 		<priority>1.0</priority>
 	</url>
@@ -15,20 +15,20 @@
 	</url>
 	<url>
 		<loc>https://dropdembits.github.io/eleos</loc>
-		<lastmod>2017-06-24</lastmod>
-		<changefreq>monthly</changefreq>
+		<lastmod>2018-09-28</lastmod>
+		<changefreq>never</changefreq>
 		<priority>0.1</priority>
 	</url>
 	<url>
 		<loc>https://dropdembits.github.io/condorfos</loc>
-		<lastmod>2017-06-24</lastmod>
-		<changefreq>weekly</changefreq>
+		<lastmod>2018-09-28</lastmod>
+		<changefreq>never</changefreq>
 		<priority>0.3</priority>
 	</url>
 	<url>
 		<loc>https://dropdembits.github.io/about.html</loc>
 		<lastmod>2017-06-24</lastmod>
-		<changefreq>weekly</changefreq>
+		<changefreq>monthly</changefreq>
 		<priority>0.2</priority>
 	</url>
 </urlset>

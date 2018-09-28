@@ -29,19 +29,36 @@ body  #container {
 
 #content div div.text {
   padding: 1em;
+  min-height: fit-content;
+  height: 100%;
+  height: -moz-available;
+  height: -webkit-fill-available;
+  word-wrap: break-word;
 }
 
 #content div div.text ul {
   padding: 1em;
 }
 
+.blueberry .slides li * {
+  display: inline;
+  text-align: center;
+}
+
 footer {
+  text-align: center;
   position: relative;
   clear: both;
   z-index: 10;
-  height: 3em;
-  margin-top: -3em;
+  height: 2em;
+  padding-top: 1em;
+  margin-top: -2em;
   background: #7D7F7E;
+}
+
+footer p {
+  color: #3F403F;
+  vertical-align: middle;
 }
 
 @media screen and (max-width: 768px) {

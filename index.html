@@ -2,17 +2,17 @@
 <html>
 	<head profile="http://www.w3.org/2005/10/profile">
 		<meta charset="UTF-8" name="viewport" content="width=device-width, initial-scale=1">
-		<link rel="icon" type="image/png" href="./assets/images/smile.png">
-		<link rel="stylesheet" href="./assets/styles/header.css">
-		<link rel="stylesheet" href="./assets/styles/main.css">
-		<link rel="stylesheet" href="./assets/styles/blueberry.css">
-                <title>Some Random Person's Website</title>
+		<link rel="icon" type="image/png" href="/assets/images/smile.png">
+		<link rel="stylesheet" href="/assets/styles/blueberry.css">
+		<link rel="stylesheet" href="/assets/styles/header.css">
+		<link rel="stylesheet" href="/assets/styles/main.css">
+        <title>Some Random Person's Website</title>
 	</head>
 	<style>
 	</style>
-	<script src="./assets/scripts/jquery.min.js"></script>
-	<script src="./assets/scripts/jquery.blueberry.js"></script>
-	<script src="./assets/scripts/header.js"></script>
+	<script src="/assets/scripts/jquery.min.js"></script>
+	<script src="/assets/scripts/jquery.blueberry.js"></script>
+	<script src="/assets/scripts/header.js"></script>
 
 	<script>
 	$(window).on("load", function() {
@@ -24,13 +24,15 @@
   			<li id="main-text" class="left">DDB | Website</li>
   			<li class="icon"><a href="javascript:void(0)" onclick="iconClick()" style="">☰</a></li>
   			<ul class="menu">
-    			<li :hover class="left special-hover"><a href="./index.html">Home</a></li>
+    			<li :hover class="left special-hover"><a href="/index.html">Home</a></li>
     			<li class="left special-hover dropdown">
-      				<a href="javascript:void(0)" onclick="dropdownClick()" style="">Stuff<img id="arrow" src="./assets/images/arrow.png"/></a>
+      				<a href="javascript:void(0)" onclick="dropdownClick()" style="">Stuff<img id="arrow" src="/assets/images/arrow.png"/></a>
       				<ul class="dropdown-content">
-        				<li><a href="./eleos/index.html">ELEOS</a></li>
-        				<li><a href="./condorfos/index.html">CondorFOS</a></li>
-        				<li><a href="./countdown/index.html">A Special Countdown</a></li>
+						<li><a href="/agb/index.html">AGB</a></li>
+						<li><a href="/k4os/index.html">Kernel4</a></li>
+        				<li><a href="/eleos/index.html">ELEOS</a></li>
+        				<li><a href="/condorfos/index.html">CondorFOS</a></li>
+        				<li><a href="/countdown/index.html">A Special Countdown</a></li>
       				</ul>
     			</li>
     			<li class="left special-hover"><a href="about.html">About</a></li>
@@ -39,42 +41,45 @@
 		</nav>
 		
 		<div id="content">
-		<div>
-		<div class="blueberry">
-			<ul class="slides crop">
-				<li>
-					<picture style="width=100%;">
-						<source srcset="./assets/images/eleos-320.png" media="(max-width: 320px)">
-						<source srcset="./assets/images/eleos-375.png" media="(max-width: 375px)">
-						<source srcset="./assets/images/eleos-425.png" media="(max-width: 425px)">
-						<source srcset="./assets/images/eleos-768.png" media="(max-width: 768px)">
-						<source srcset="./assets/images/eleos-1024.png" media="(max-width: 1024px)">
-						<source srcset="./assets/images/eleos-1200.png" media="(max-width: 1200px)">
-						<img src="./assets/images/eleos-1200.png" alt="ELEOS">
-					</picture>
-				</li>
-				<li>
-					<img src="https://raw.githubusercontent.com/xDIAMONDSx/CondorFOS/master/images/condor_0.1.png" alt="CondorFOS">
-				</li>
-			</ul>
-		</div>
-		<div class="text">
-			<h1>Welcome to the website!</h1>
-			<p> <i>(This text has fallen into /dev/null)</i>
-				<ul>
-					<li>ELEOS</li>
-					<li>CondorFOS</li>
-					<li>Something being worked on</li>
-					<li><i>(This text has fallen into /dev/null)</i></li>
-					<li><i>(This text has fallen into /dev/null)</i></li>
-				</ul>
-				<i>(This text has fallen into /dev/null)</i>
-			</p>
-		</div>
-		</div>
+			<div>
+				<div class="blueberry">
+					<ul class="slides">
+						<li>
+							<picture>
+								<source srcset="/assets/images/eleos-320.png" media="(max-width: 320px)">
+								<source srcset="/assets/images/eleos-375.png" media="(max-width: 375px)">
+								<source srcset="/assets/images/eleos-425.png" media="(max-width: 425px)">
+								<source srcset="/assets/images/eleos-768.png" media="(max-width: 768px)">
+								<source srcset="/assets/images/eleos-1024.png" media="(max-width: 1024px)">
+								<source srcset="/assets/images/eleos-1200.png" media="(max-width: 1200px)">
+								<img src="/assets/images/eleos-1200.png" alt="ELEOS">
+							</picture>
+						</li>
+						<li>
+							<img src="https://raw.githubusercontent.com/xDIAMONDSx/CondorFOS/master/images/condor_0.1.png" alt="CondorFOS" style="width: auto;">
+						</li>
+					</ul>
+				</div>
+				<div class="text">
+					<h1>Welcome to the website!</h1>
+					<p> <h2>Some of my projects:</h2>
+						<ul>
+							<li>AGB</li>
+							<li>K4OS</li>
+							<li><i>A Special Countdown</i></li>
+						</ul>
+					</p>
+					<p> <h2>Older Projects:</h2>
+						<ul>
+							<li>ELEOS (<b>Defunct</b> as of 2017-04-09)</li>
+							<li>CondorFOS (<b>Defunct</b> as of 2017-08-17)</li>
+						</ul>
+					</p>
+				</div>
+			</div>
 		</div>
 		<footer>
-			<i>(This text has fallen into /dev/null)</i>
+			<p>&copy; DropDemBits 2016-2018</p>
 		</footer>
 	</body>
 </html>
