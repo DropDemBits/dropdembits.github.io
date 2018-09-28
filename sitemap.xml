@@ -9,9 +9,27 @@
 	</url>
 	<url>
 		<loc>https://dropdembits.github.io/countdown</loc>
-		<lastmod>2017-06-24</lastmod>
+		<lastmod>2018-09-28</lastmod>
 		<changefreq>monthly</changefreq>
 		<priority>0.5</priority>
+	</url>
+	<url>
+		<loc>https://dropdembits.github.io/agb</loc>
+		<lastmod>2018-09-28</lastmod>
+		<changefreq>monthly</changefreq>
+		<priority>0.5</priority>
+	</url>
+	<url>
+		<loc>https://dropdembits.github.io/kernel4</loc>
+		<lastmod>2018-09-28</lastmod>
+		<changefreq>monthly</changefreq>
+		<priority>0.5</priority>
+	</url>
+	<url>
+		<loc>https://dropdembits.github.io/about.html</loc>
+		<lastmod>2018-09-28</lastmod>
+		<changefreq>yearly</changefreq>
+		<priority>0.2</priority>
 	</url>
 	<url>
 		<loc>https://dropdembits.github.io/eleos</loc>
@@ -24,11 +42,5 @@
 		<lastmod>2018-09-28</lastmod>
 		<changefreq>never</changefreq>
 		<priority>0.3</priority>
-	</url>
-	<url>
-		<loc>https://dropdembits.github.io/about.html</loc>
-		<lastmod>2017-06-24</lastmod>
-		<changefreq>monthly</changefreq>
-		<priority>0.2</priority>
 	</url>
 </urlset>
