@@ -2,7 +2,7 @@ var endTimestamp = [
 	[new Date(1545627600000), "On Chistmas Eve..."],
 	[new Date(1545714000000), "Oh Christmas tree,<br>oh Christmas tree..."],
 	[new Date(1546318799000), "\'Ere come 2019..."],
-	[new Date(1546318800000), "A New Year is dawni g, arise from your sleep."],
+	[new Date(1546318800000), "A New Year is dawning, arise from your sleep."],
 ];
 
 var daysInMs = 1000 * 60 * 60 * 24;
